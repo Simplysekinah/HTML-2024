@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+            }
+            .section-one{
+                background-image: url(../Downloads/USA-netflix.png);
+                height: 500px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: darken;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px 90px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .Netflix{
+                font-size: 25px;
+                font-weight: 900;
+                color: rgb(229,9,20);
+                font-family: "Segoe UI";
+            }
+            .signin{
+                background-color: rgb(229,9,20);
+                border: 0;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: 700;
+            }
+            h1{
+                width: 500px;
+                color: white;
+                font-size: 50px;
+                font-weight: 800;
+                text-align: center;
+            }
+            .first-div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 100px 0 0 0;
+                gap: 20px;
+            }
+            p{
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .p1{
+                color: white;
+                font-weight: 700;
+                font-size: 22px;
+                width: 440px;
+                text-align: center;
+            }
+
+
+
+
+
+
+            /* media query */
+            @media (max-width: 960px) {
+                .p1{
+                    width: 420px;
+                }
+            }
+            @media (max-width: 599.33px) {
+                .two{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                input{
+                    width: 430px;
+                    flex: 1;
+                }
+                .p1{
+                    width:440px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                h1{
+                    width: 500px;
+                    font-size: 30px;
+                }
+            }
+            @media (max-width: 578px) {
+                h1{
+                    width: 380px;
+                }
+            }
+            @media (max-width: 570px) {
+                .p1{
+                    width: 380px;
+                }
+            }
+            @media (max-width: 550px) {
+                .p1{
+                    width: 350px;
+                }
+            }
+            @media (max-width: 512px) {
+                h1{
+                    width: 350px;
+                }
+                input{
+                    width: 350px;
+                }
+            }
+            @media (max-width: 499px) {
+                .p1{
+                    width: 420px;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section class="section-one">
+                <nav>
+                    <div class="Netflix">NETFLIX</div>
+                    <button class="signin">Signin</button>
+                </nav>
+                <div class="first-div">
+                    <h1>Unlimited movies, TV shows, and more</h1>
+                    <p>Starts at ₦1,600. Cancel anytime.</p>
+                    <p class="p1">Ready to watch? Enter your email or mobile number  to create or restart your membership.</p>
+                    <div class="two">
+                        <input type="text" placeholder="Email">
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
