@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-property: all;
+        }
+        .box:hover{
+            width: 500px;
+            height: 200px;
+        }
+        .btn:focus{
+            background-color: red;
+            color: white;
+        }
+        .btn:active{
+            background-color: darkorange;
+        }
+        .contain{
+            display: none;
+        }
+        .hold:focus-within .contain{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn">click me</button>
+    <div class="hold">
+        <input type="text">
+        <div class="contain">
+            <div>gfweuifweuifwu</div> 
+            <div>gfweuifweuifwu</div>
+            <div>gfweuifweuifwu</div>
+            <div>gfweuifweuifwu</div>
+        </div>
+    </div>
+</body>
+</html>
