@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .trans{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* transform: translate(100px,50px);
+        transform: translateY(100px); */
+    }
+    .trans:hover{
+        /* transform: translateY(100px);  */
+        transform: translate(100px,50px);
+    }
+    .rotat{
+        background-color: bisque;
+        color: azure;
+        width: 400px;
+    }
+    .rotat:hover{
+        transform: rotate(50deg);
+    }
+    .scal:hover{
+        background-color: brown;
+        color: coral;
+        transform: scale(2);
+    }
+    .ske:hover{
+        background-color: brown;
+        color: blanchedalmond;
+        transform: skew(50deg);
+    }
+    .holder:hover{
+        transform: scale(1.15);
+        transition: ease-in-out 1ms;
+        box-shadow: 0 0 20px rgba(3, 3, 3, 0.11);
+    }
+    .transis{
+        background-color: bisque;
+        font-size: 24px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: skew(20deg);
+        transition-property: width;
+        transition-duration: 5s;
+        transition-timing-function: ease-in-out;
+    }
+    .transis:hover{
+        width: 500px;
+    }
+    </style>
+<body>
+    <div>translate()</div>
+    <h1 class="trans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ad? Dolore numquam velit dignissimos perferendis repellendus placeat, totam molestiae architecto cum ratione repellat necessitatibus blanditiis, ut inventore repudiandae perspiciatis tempora.
+    Adipisci explicabo unde accusamus dolorum quas labore voluptates fugit tempora nulla maxime. Animi facilis fuga assumenda aliquam quas praesentium at, tempore id eaque eligendi, aspernatur maiores inventore voluptates explicabo ab.
+    Ipsum, hic iusto ipsam nesciunt architecto autem dicta cum ad repellat quia esse enim quibusdam, inventore eos animi beatae cupiditate corporis. Rerum consequatur voluptatem commodi voluptates magni quo quam libero!</h1>
+    <div>rotate()</div>
+    <h2 class="rotat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum hic voluptatum provident facilis ipsam harum nihil rem pariatur ex iste commodi at repellendus, eaque sed beatae iusto illum, asperiores dolorum.
+    Totam saepe deserunt, voluptate vero iure eos nisi magni eaque voluptas ipsum architecto tempore blanditiis esse! Impedit dolorem totam placeat quisquam earum nihil libero ratione animi amet, porro, qui maxime!
+    Nihil voluptatem voluptas vitae laudantium. Vitae nam consequatur id qui. Perferendis, praesentium, rerum temporibus architecto nisi, consequatur labore sapiente libero aut omnis est ullam nobis totam distinctio numquam possimus facere.</h2>
+    <div>scale()</div>
+    <p class="scal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ducimus libero suscipit. Obcaecati ullam accusamus perspiciatis quidem molestias, commodi cum est, facilis aliquam nostrum illum corporis dolorum ut nisi consectetur!
+    Aperiam et sapiente maiores voluptatibus? Velit rem, dolores ad maiores et rerum dolor aspernatur culpa dicta accusamus, sequi perspiciatis minus! Fuga voluptatibus dicta ad a porro ipsam commodi voluptates qui!
+    Ipsum, repellendus voluptatibus excepturi dolores unde dolorum repellat ipsam labore reprehenderit soluta rem neque. Soluta quo similique laboriosam quod architecto, omnis eius deleniti. Possimus aliquid architecto quaerat hic, alias veniam.</p>
+    <div>skew()</div>
+    <p class="ske">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa obcaecati, est quaerat animi sint corrupti nisi pariatur possimus officia aspernatur facere saepe voluptatibus ratione labore accusantium aliquam minus sit.
+    Possimus hic adipisci illum, ullam consectetur error nam dolore ab modi atque odit reiciendis provident tenetur, excepturi nulla fuga maxime earum nihil alias. Ullam, quas! Impedit cum tenetur recusandae non.</p>
+    <div class="holder" style="padding: 10px; border: 2px solid gray; width: 250px; display: flex;
+    align-items: center; justify-content: center; flex-direction: column; margin-left: 30px;">
+        <div>
+            <img style="width: 150px;" src="../Downloads/MacBook Pro 16_ - 10.png" alt="">
+        </div>
+        <h2>Micrservice</h2>
+        <div style="display: flex; flex-wrap: wrap; width: 150px; text-align: center;">
+            Quickly deliver
+                        production-grade
+                        features with
+                        independently
+                        evolvable
+                        microservices.
+        </div>
+    </div>
+    <p class="transis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus beatae eos quia facere vel. Voluptas soluta, veniam dolor fugit fugiat totam quam nam quod repellat neque sapiente sint omnis laboriosam.
+    Distinctio alias, inventore impedit ut corporis placeat officia officiis. Magni ullam, assumenda fugiat quos expedita maiores incidunt veritatis at omnis dolores dolore mollitia, nostrum nesciunt cumque beatae dolor consequuntur libero!
+    Magni, necessitatibus debitis excepturi, quibusdam amet ea a officiis, adipisci dolorem autem cumque aliquid. Sint deleniti, voluptate rem odit aspernatur accusamus, quam debitis similique vel dolor id suscipit numquam necessitatibus!</p>
+</body>
+</html>

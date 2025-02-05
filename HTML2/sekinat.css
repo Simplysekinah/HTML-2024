@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sekinat-div{
+    background-color: bisque;
+    color: brown;
+}
+.about,.drops{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    
+}
+.drop{
+    color: black;
+    text-decoration: none;
+}
+.dropdown{
+    background-color: aquamarine;
+    border-top: 4px solid orange;
+    padding: 10px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    display: none;
+    left: 500px;
+}
+.dropdowns{
+    background-color: aquamarine;
+    border-top: 4px solid orange;
+    padding: 10px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    display: none;
+    left: -220px;
+    /* top: 0; */
+}
+.big-drop:hover .dropdown{
+    display: block;
+}
+.big-drops:hover .dropdowns{
+    display: block;
+}
+nav{
+    width: 100%;
+    /* height: 80px; */
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+}
+.img-nav{
+    width: 300px;
+    height: 50px;
+}
+.home-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

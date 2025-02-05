@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .trans{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        /* transform: translate(100px,50px); */
+        transform: translateY(100px);
+    }
+    .rotat{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: rotate(50deg);
+    }
+    .rotat{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: rotate(50deg);
+    }
+    .scal{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(2,3);
+        /* transform: skew(20deg); */
+        transition-property: width;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+    }
+    .scal:hover{
+        width: 500px;
+    }
+    .ske{
+        background-color: red;
+        color: white;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: skew(20deg);
+        transition-property: width;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+    }
+    .ske:hover{
+        width: 500px;
+    }
+    .anim{
+        background-color: bisque;
+        color: brown;
+        width: 500px;
+        animation-duration: 10s;
+        animation-name: move;
+        animation-iteration-count: 10s;
+    }
+    @keyframes move {
+        50%{
+            width: 400px;
+            background-color: cadetblue;
+            margin-left: 100%;
+        }
+        75%{
+            width: 450px;
+            color: white;
+            /* background-color: cadetblue; */
+            margin-left: 100%;
+            font-size: 20px;
+        }
+        100%{
+            width: 600px;
+            background-color: red;
+            margin-left: 0%;
+        }
+    }
+</style>
+<body>
+    <div>
+        <div>translate()</div>
+        <!-- <p class="trans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit modi veritatis ipsam quod accusantium. Nam, perferendis! Soluta, molestias suscipit sunt porro nam ab odio exercitationem placeat nemo voluptates aperiam.</p> -->
+        <div>rotate()</div>
+        <p class="rotat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit modi veritatis ipsam quod accusantium. Nam, perferendis! Soluta, molestias suscipit sunt porro nam ab odio exercitationem placeat nemo voluptates aperiam.</p>
+        <div>scale()</div>
+        <p class="scal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit modi veritatis ipsam quod accusantium. Nam, perferendis! Soluta, molestias suscipit sunt porro nam ab odio exercitationem placeat nemo voluptates aperiam.</p>
+        <div>skew()</div>
+        <p class="ske">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit modi veritatis ipsam quod accusantium. Nam, perferendis! Soluta, molestias suscipit sunt porro nam ab odio exercitationem placeat nemo voluptates aperiam.</p>
+        <div>
+            <p>animation</p>
+            <div>
+                <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae corrupti officia voluptatum at similique temporibus labore ipsum, distinctio exercitationem, deserunt hic dolor dolorum expedita ipsa maxime, accusamus repellat tenetur.
+                Dicta nihil odio assumenda. Consequatur illo perspiciatis voluptatibus excepturi facere neque saepe, consequuntur praesentium. Id recusandae perferendis possimus iste, in unde laborum architecto distinctio, beatae veritatis magni quae, temporibus nobis?
+                Quis quae ullam quod sunt cumque tempore iusto ab voluptates, sint vitae. Fugiat provident possimus laborum reiciendis quidem tenetur. Commodi voluptate illo necessitatibus atque expedita fugiat nostrum ad cum quod.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

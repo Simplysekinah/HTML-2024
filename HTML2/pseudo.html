@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .single::first-letter{
+            color: orangered;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .singular::before{
+            content: url(chelsea.png);
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+        }
+        .singular::after{
+            content: 'sekinat';
+        }
+        .second::first-line{
+            color: chocolate;
+            background-color: antiquewhite;
+            font-size: 30px;
+        }
+        ::placeholder{
+            color: brown;
+        }
+        .trans{
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: chocolate;
+        }
+        .trans:hover{
+            transform: translate(80px, 50px);
+            width: 500px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 1000ms;
+        }
+        .rotat{
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: palevioletred;
+            color: white;
+        }
+        .rotat:hover{
+            transition-duration: 30s;
+            transform: rotate(-360deg);
+        }
+        .scal{
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: olive;
+            color: white;
+            transform: scale(2);
+        }
+        .scal:hover{
+            transform: scale(5);
+        }
+        .ske{
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: peru;
+            color: white;
+        }
+        .ske:hover{
+            transform: skew(40deg);
+        }
+        .container{
+            width: 700px;
+            height: 100vh;
+            background: linear-gradient(purple, orangered);
+            color: white;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move {
+            20%{
+                background: linear-gradient(purple, orangered);
+                font-weight: bold;  
+            }
+            40%{
+                background: linear-gradient(pink, orangered);
+                font-weight: 500;  
+            }
+            60%{
+                background: linear-gradient(green, Olivedrab);
+                font-weight: bolder;  
+                font-size: 20px;
+                color: greenyellow;
+            }
+            80%{
+                background: linear-gradient(purple, orangered);
+                font-weight: bold;  
+                margin: auto;
+            }
+            100%{
+                background: linear-gradient(purple, plum);
+                font-size: bold;  
+                font-size: 30px;
+                color: palevioletred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="single">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo ut placeat nostrum iste, soluta quisquam deleniti tenetur perspiciatis magnam temporibus iure eius libero laboriosam unde cum dignissimos quas nisi.
+        Ad consequatur itaque cumque voluptatum alias. Et hic ipsam, ea sunt distinctio nostrum, repudiandae ad atque nobis odio rem, amet ducimus placeat dolores laudantium possimus dolor illum! Molestias, quisquam temporibus!
+        Et, tempora doloribus. Praesentium quidem temporibus voluptatum cumque quos quaerat magnam iste, molestias ducimus architecto ipsum eligendi animi ipsa similique molestiae consectetur quod obcaecati qui numquam tenetur, mollitia esse! Atque.
+        Qui veniam, culpa veritatis ipsam maxime odit sunt itaque tempora dolorum similique commodi possimus quisquam illo consequatur accusamus perspiciatis mollitia, illum, alias ea excepturi hic laudantium explicabo ad minima. Assumenda!
+        Hic sint, iure necessitatibus cumque eius, cupiditate maxime facilis laboriosam accusantium similique itaque reiciendis, consequuntur neque amet placeat. Ea ipsa nam officiis fuga repellat laborum eius corporis. Doloribus, veritatis labore!</div>
+        <div class="singular">SimplySekinah</div>
+        <div class="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum quibusdam voluptatum consectetur aspernatur laboriosam in totam eum, omnis veniam nesciunt exercitationem fuga molestias corrupti magni esse ipsam nihil tempore.</div>
+        <div>
+            <input type="text" placeholder="february Cohort">
+        </div>
+
+        <p>Transform</p>
+        <div class="trans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam aspernatur nemo, incidunt saepe adipisci impedit delectus hic blanditiis possimus suscipit debitis recusandae aut harum. Distinctio veniam molestias inventore doloribus!</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rotat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam aspernatur nemo, incidunt saepe adipisci impedit delectus hic blanditiis possimus suscipit debitis recusandae aut harum. Distinctio veniam molestias inventore doloribus!</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="scal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam aspernatur nemo, incidunt saepe adipisci impedit delectus hic blanditiis possimus suscipit debitis recusandae aut harum. Distinctio veniam molestias inventore doloribus!</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ske">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam aspernatur nemo, incidunt saepe adipisci impedit delectus hic blanditiis possimus suscipit debitis recusandae aut harum. Distinctio veniam molestias inventore doloribus!</div>
+    </div>
+</body>
+
+</html>

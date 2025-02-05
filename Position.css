@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.static{
+    position: static;
+    top: 0;
+}
+.container{
+    position: relative;
+    top: 0;
+}
+/* .main{
+    position: relative;
+}
+.small-div{
+    display: none;
+    position: absolute;
+}
+.main:hover .small-div{
+    display: block;
+    background-color: brown;
+    color: white;
+} */
+.main{
+    position: relative;
+}
+.div-content{
+    position: absolute;
+    display: none;
+}
+.main:hover .div-content{
+    display: block;
+    background-color: red;
+}
+.second-div{
+    position: relative;
+}
+.div-contents{
+    position: absolute;
+    display: none;
+}
+.second-div:hover .div-contents{
+    display: block;
+    background-color: red;
+    right: 10px;
+}
+.fola-div{
+    position: sticky;
+    top: 0;
+    /* background-color: blue; */
+}

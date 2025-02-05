@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: chocolate;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        .holder-div{
+            background-color: brown;
+            color: white;
+        }
+        .holder-div h1{
+            color: burlywood;
+        }
+        button{
+            background-color: burlywood;
+            color: brown;
+            border: 0;
+            padding: 10px;
+        }
+        button:hover{
+            background-color: coral;
+            color: chocolate;
+        }
+        button:active{
+            background-color: red;
+            color: white;
+        }
+        .show{
+            background-color: cadetblue;
+            color: antiquewhite;
+            /* display: none; */
+            visibility: hidden;
+        }
+        button:focus-within.show{
+            visibility: visible;
+        }
+        .click{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            padding: 10px 40px 10px 40px;
+            justify-content: space-between;
+            /* padding of two values the first one is affecting top and bottom while the second values is affecting left and right */
+            background-color: #2d2d2d;
+        }
+        .drop{
+            background-color: coral;
+            color: bisque;
+            width: 220px;
+            padding: 10px 40px 10px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* display: none; */
+            visibility: hidden;
+        }
+        .holder:focus-within .drop{
+            visibility: visible;
+            /* display: block; */
+        }
+        .cancelled{
+            display: none;
+        }
+        .holder:focus-within .dropdowns{
+            display: none;
+        }
+        .holder:focus-within .cancelled{
+            display: block;
+        }
+        .wrapper{
+            width: 600px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap-reverse;
+        }
+        .big-div{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .big-drop{
+            display: none;
+            position: absolute;
+            padding: 10px;
+            background-color: aquamarine;
+            top: 0;
+            margin-top: 40px;
+        }
+        .big-div:hover .big-drop{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: bisque;">Sign Up</h1>
+        <p style="color: gray;">Create an account</p>
+        <input type="text" placeholder="Username">
+    </div>
+    <div class="holder-div">
+        <h1>My name is sekinat</h1>
+        <p>I'm a web developer</p>
+        <p>I laugh and also frown</p>
+        <button>Play</button>
+        <button class="show">Show</button>
+    </div>
+    <div class="holder">
+        <button class="click">
+            <p>My Profile</p>
+            <span class="material-symbols-outlined dropdowns">expand_more</span>
+            <span class="material-symbols-outlined cancelled">close</span>
+        </button>
+        <div class="drop">
+            <p>I am a web developer</p>
+            <p>I am a web developer</p>
+            <p>I am a web developer</p>
+            <p>I am a web developer</p>
+            <p>I am a web developer</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <span> 1 there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span>there are lazy people in my february cohort</span>
+        <span> 1 there are lazy people in my february cohort</span>
+    </div>
+    <ul>
+        <li>sadfg</li>
+        <li>sadfg</li>
+        <li>sadfg</li>
+        <li>sadfg</li>
+    </ul>
+    <div class="big-div">
+        <P>Why spring</P>
+        <span>></span>
+        <div class="big-drop">
+            <P>Overview</P>
+            <P>Micro services</P>
+            <P>Reactive</P>
+            <P>Cloud</P>
+            <P>Event Driven</P>
+            <P>Web Application</P>
+        </div>
+    </div>
+</body>
+</html>
