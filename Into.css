@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    /* background-color: brown; */
+}
+.second, #second{
+    /* background-color: cadetblue; */
+}
+div .second, #second{
+    /* background-color: cadetblue; */
+}
+div :nth-child(odd){
+    /* background-color: cadetblue; */
+}
+.second:nth-child(2){
+    background-color: rebeccapurple;
+}
+.unlimited-divs{
+    width: 300px;
+    text-align: center;
+    font-family: "Segoe UI";
+    position: sticky;
+    bottom: 40px;
+    /* top: 0; */
+    /* font-weight: 900; */
+
+}
+.holder-div{
+    display: inline-block;
+}
+.button-div{
+    background-color: aqua;
+    /* width: 100px; */
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-div{
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    /* background-color: burlywood; */
+    overflow: auto;
+    /* scrollbar-width: thin; */
+}
+#main-div::-webkit-scrollbar{
+    /* width: 2px; */
+    /* background-color: brown; */
+    /* display: none; */
+}
+::-webkit-scrollbar{
+    /* display: none; */
+}
+/* #main-div::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+    width: 30px;
+} */
+.first:hover{
+    /* background-color: red; */
+    /* color: white; */
+}
+.first:focus{
+    color: aqua;
+}
+.first:active{
+    color: brown;
+}
+.what{
+    background-color: gray;
+    color: white;
+    width: 500px;
+    border: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#what{
+    background-color: gray;
+    color: white;
+    width: 500px;
+    margin: 4px 0 0 0 ;
+    display: none;
+}
+.what-div:focus-within #what{
+    display: block;
+}
+#close{
+    display: none;
+}
+.what-div:focus-within #add{
+    display: none;
+}
+.what-div:focus-within #close{
+    display: block;
+}
+table,tr,td{
+    border: 1px solid black;
+    padding: 20px;
+    border-collapse: collapse;
+    margin: auto;
+}
+.lazy{
+    text-transform: uppercase;
+}
+.lazy1{
+    line-height: 50px;
+}
+.tosin{
+    display: flex;
+    background-color: whitesmoke;
+    padding: 10px;
+    gap: 20px;
+    width: 500px;
+    flex-wrap: wrap;
+    box-shadow: 20px 20px 20px whitesmoke;
+    margin: 0 0px 0 20px ;
+    /* border: 3px solid gray; */
+    border-radius: 20px;
+    height: 200px;
+    overflow: auto;
+}
+#tosin{
+    background-color: grey;
+    border-radius: 20px;
+    width: 520px;
+    height: 300px;
+}
+#call{
+    color: orange;
+}
+.each{
+    width: 100px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 10px 10px 20px burlywood;
+}
+.drop{
+    display: none;
+    background-color: red;
+}
+.main-drop:hover .drop{
+    display: block;
+}
+.drop1{
+    display: none;
+}
+.main-drop1:hover .drop1{
+    display: block;
+}
+.first-div{
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+}
+.lazy-div{
+    position: relative;
+}
+.lazy-content{
+    display: none;
+    background-color: brown;
+    color: white;
+    position: absolute;
+}
+.lazy-div:hover .lazy-content{
+    display: block;
+}
+.master{
+    display: flex;
+    gap: 30px;
+}
+.down{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 1px 2px;
+    width: 50px;
+    height: 10px;
+    position: relative;
+}
+#set{
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    margin: -6px 0 0 0;
+}
+.awwal{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    background-color: brown;
+    margin: 5px 10px;
+    box-shadow: 10px 10px 10px rgba(165, 42, 42, 0.388),10px 10px 10px rgba(165, 42, 42, 0.388);
+}
+.down:focus-within #set{
+    display: none;
+}
+.down:focus-within #mon{
+    display: block;
+}
+#mon{
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    margin: -6px 0 0 0;
+    right: 0;
+    font-size: 14px;
+}
+/* input::placeholder{
+    color: brown;
+} */
+::placeholder{
+    color: coral;
+}
+.input-first::placeholder{
+    color: red;
+}
+#mac::first-letter{
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+#macs{
+    width: 250px;
+    overflow: hidden;
+}
+#macs::first-line{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: coral;
+    color: white;
+}
+.dummy::before{
+    content: 'Dummy; ';
+}
+.dummy::after{
+    content: ' Harry Potter';
+}
+.dummys::before{
+    content: url(../../Desktop/Downloads/chelsea.png);
+}
+.trans,.trans1{
+    width: 500px;
+    background-color: cadetblue;
+    box-shadow: 10px 10px 10px rgba(0, 0, 255, 0.468);
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    20%{
+        background-color: burlywood;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    50%{
+        background-color: brown;
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+    }
+    75%{
+        background: linear-gradient(brown,burlywood);
+        color: wheat;
+    }
+    100%{
+        background: linear-gradient(pink, purple);
+        color: plum;
+        margin: 20px 50px;
+    }
+}
+.trans1:hover{
+    width: 300px;
+    transition: all 3s linear 2s;
+    transform: translate(20px,40px);
+}
+.trans:hover{
+    transition-property: all;
+    transition-duration: 10s;
+    transition-delay: 5s;
+    transition-timing-function: ease;
+    width: 300px;
+    transform: translate(20px,40px);
+    
+}
+
+#rotat,#rotat1{
+    background-color: bisque;
+    color: white;
+    width: 200px;
+}
+#rotat1:hover{
+    transition: all 5s ease-in-out 3s;
+    transform: rotate(350deg);
+}
+#rotat:hover{
+    transition: all 5s ease-in 2s;
+    transform: rotate(30deg);
+}
+.each:hover{
+    transition: all 5s ease-out 2s;
+    transform: scale(0.5);
+}
+.april:hover{
+    background-color: brown;
+    color: white;
+    transform: skew(120deg);
+    width: 100px;
+}
+.drop-div{
+    display: none;
+    position: absolute;
+}
+.drop-main{
+    position: relative;
+}
+.drop-main:hover .drop-div{
+    display: block;
+}
+
+
+
+
+/* Media query */
