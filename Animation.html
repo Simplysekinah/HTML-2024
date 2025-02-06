@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            border-radius: 20% 10%;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+        }
+        h1{
+            color: red;
+            text-transform: uppercase;
+            animation-name: text;
+            font-weight: 900;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease;
+            margin: auto;
+        }
+        .rotat{
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            animation: load 2s ease-in 1s infinite;
+        }
+        body{
+            background: linear-gradient(black, gold);
+            animation: back 2s ease-in 1s infinite;
+            background-size: 100% 300%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+        }
+        @keyframes move {
+            to{
+                transform: translate(200px);
+            }
+            from{
+                transform: translate(0);
+            }
+        }
+        @keyframes text {
+            0%{
+                transform: scale(0);
+            }
+            20%{
+                transform: scale(1.5);
+            }
+            30%{
+                transform: scale(0.5);
+            }
+            100%{
+                transform: scale(2.2);
+            }
+        }
+        @keyframes load {
+            to{
+                opacity: 0;
+                scale: 0.7;
+            }
+            from{
+                opacity: 100%;
+                scale: 1;
+            }
+        }
+        @keyframes back {
+            0%{
+                background: linear-gradient(blue, red);
+                background-position: 0 50%;
+                background-repeat: no-repeat;
+            }
+            50%{
+                background-position: 100% 50%;
+                background-repeat: no-repeat;
+                scale: 0.5;
+            }
+            100%{
+                background-position: 0 50%;
+                background: linear-gradient(purple, plum);
+                background-repeat: no-repeat;
+                rotate: 200deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animation -->
+    <div class="first"></div>
+    <h1>Animation</h1>
+    <div style="display: flex; gap: 2px;">
+        <div class="rotat"></div>
+        <div class="rotat"></div>
+        <div class="rotat"></div>
+    </div>
+</body>
+</html>

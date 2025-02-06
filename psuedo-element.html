@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name::first-letter{
+            color: chartreuse;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        .bible::first-line{
+            background-color: red;
+            color: white;
+            font-size: large;
+            font-style: italic;
+        }
+        ::placeholder{
+            color: tomato;
+        }
+        .scroll{
+            width: 250px;
+            background-color: tan;
+            color: white;
+            overflow: auto;
+            height: 100px;
+        }
+        .scroll::-webkit-scrollbar{
+            /* display: none; */
+            /* background-color: chartreuse; */
+            width: 5px;
+        }
+        .scroll::-webkit-scrollbar-thumb{
+            background-color: red;
+            border-radius: 30px;
+        }
+        ::marker{
+            color: darksalmon;
+        }
+        .Name::before{
+            content: "Before ";
+        }
+        .Name::after{
+            content: " After";
+        }
+    </style>
+</head>
+<body>
+    <div class="name">Sekinah</div>
+    <div class="bible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus est facere dolorem provident incidunt voluptate magnam, doloribus corporis ab adipisci maiores illo, optio deleniti consectetur, delectus saepe cupiditate reprehenderit quia.</div>
+    <input type="text" placeholder="What is your name?">
+    <div class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus sed consectetur voluptates quam non explicabo, labore fugit nostrum qui mollitia ducimus vero? Quaerat nihil, natus numquam dolore ullam enim.</div>
+    <ul>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+    </ul>
+    <ol>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+    </ol>
+    <div class="Name">Sekinat</div>
+</body>
+</html>

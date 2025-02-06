@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .translate{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            transition: all 1s ease-in 1s;
+        }
+        .translate:hover{
+            transform: translate(200px,100px);
+            /* transform: translateX(200px); */
+            /* transform: translateY(100px); */
+        }
+        .rotat{
+            width: 200px;
+            height: 200px;
+            margin: 10px 0 0 0;
+            background-color: palevioletred;
+            transition: all 1s ease-in 1s;
+        }
+        .rotat:hover{
+            transform: rotate(-290deg);
+        }
+        .scal{
+            width: 200px;
+            height: 200px;
+            margin: 10px 0 0 0;
+            background-color: gold;
+            transition: all 1s ease-in 1s;
+            box-shadow: 10px 10px 10px 10px rgba(222, 184, 135, 0.55);
+        }
+        .scal:hover{
+            transform: scale(0.8);
+        }
+        .skew{
+            width: 200px;
+            height: 200px;
+            margin: 10px 0 0 0;
+            background-color: rebeccapurple;
+            transition: all 1s ease-in 1s;
+        }
+        .skew:hover{
+            transform: skew(100deg);
+        }
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            transition: all 1s ease-in-out 1s;
+            box-shadow: 10px 10px 10px 10px burlywood;
+        }
+        img:hover{
+            transform: rotate(290deg);
+        }
+        p{
+            text-shadow: 50px 20px 5px red;
+            text-transform: capitalize;
+        }
+        .move{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-color: green;
+            transition: all 1s ease-in 1s;
+        }
+        .move:hover{
+            transform: translate(-200px,-200px);
+        }
+        .jericho{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-color: brown;
+            transition: all 1s ease-in 1s;
+            transform: skew(200deg);
+        }
+        .jericho:hover{
+            transform: skew(-200deg);
+        }
+        .sqi::before{
+            content: url(al);
+        }
+    </style>
+</head>
+<body>
+    <div class="translate"></div>
+    <div class="rotat"></div>
+    <div class="scal"></div>
+    <div class="skew"></div>
+    <img src="Alarm.png" alt="">
+    <p>text shadow</p>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta maxime, reprehenderit quos perferendis illo repellendus repellat, blanditiis impedit consectetur delectus temporibus totam! Ab molestiae maxime iusto esse voluptates assumenda.</h1>
+    <div class="move"></div>
+    <div class="jericho"></div>
+    <div class="sqi">SQI</div>
+</body>
+</html>

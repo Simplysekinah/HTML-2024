@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: burlywood;
+            width: 500px;
+            display: flex;
+            gap: 5px;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column; */
+            overflow: auto;
+            scrollbar-width: 0;
+        }
+
+        .container div {
+            min-width: 150px;
+            height: 200px;
+            background-color: brown;
+            /* scrollbar-width: none; */
+        }
+
+        .stick {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        .fixed {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .relat {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 50px;
+        }
+
+        .down {
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        .parent:hover .down {
+            display: block;
+        }
+
+        .parent {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- five positioning -static,sticky,fixed,relative ,absolute  left,bottom,right,top-->
+    <div class="stick"></div>
+    <div class="fixed"></div>
+    <div class="relat"></div>
+    <div class="parent">
+        <div>About</div>
+        <div class="down">
+            <p>wey</p>
+            <p>wey</p>
+            <p>wey</p>
+            <p>wey</p>
+        </div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem et quo architecto assumenda doloribus nobis
+        numquam animi aut nemo dolorum excepturi repellendus, aperiam, enim sapiente perferendis amet quod! Libero, id!
+        Iste et, quo vel provident commodi officia aliquid quia ex eaque distinctio unde, quaerat, architecto iure
+        excepturi. Laudantium exercitationem, iure iste praesentium nobis itaque reprehenderit veritatis quas sint a
+        facere!
+        Itaque atque nam sapiente, tempore, a voluptatem quas similique eos laborum expedita fugit veniam ducimus eum.
+        Itaque obcaecati consequuntur modi repudiandae veniam quo placeat eaque ullam laboriosam, numquam voluptas.
+        Unde.
+        Nesciunt consequatur voluptatem exercitationem vero labore id aperiam, voluptatum quam, minima iste soluta.
+        Minima nihil recusandae ea qui quibusdam reiciendis, maiores nemo quisquam soluta quam dolor sapiente voluptate
+        ipsam repudiandae.
+        Minima commodi eius labore. Repellendus magnam, animi, vitae nam veritatis beatae dolorem corporis autem placeat
+        ab, corrupti ipsam. Quasi similique saepe maiores natus dolore magnam cumque, ut delectus autem sequi.
+        Tempora deserunt nobis, dolorem laudantium temporibus sequi necessitatibus sint magnam sunt quos sit nulla, non
+        amet tenetur est atque quam, molestias voluptatibus beatae eius optio blanditiis eveniet ullam. Saepe, eius?
+        Voluptates culpa magni explicabo expedita deserunt fugiat fuga? Doloribus quod nihil officia deleniti, explicabo
+        cumque inventore ullam perspiciatis nemo odio labore repellat. Sit debitis praesentium vero nostrum sapiente
+        alias? Vel.
+        Qui aliquam pariatur consectetur est delectus beatae id architecto earum. Suscipit eum dolor nesciunt
+        consequatur laboriosam quidem facilis minus odit consectetur. Sapiente officia illum ullam cum veritatis quam
+        molestiae maxime.
+        Fugiat, recusandae maiores asperiores dolor incidunt a laudantium molestiae modi quos tenetur praesentium
+        similique consequuntur at velit est. Unde, dolorum architecto ratione itaque reprehenderit quae enim eos nisi
+        totam explicabo?
+        Aliquid quidem iste, unde rerum quis, fugiat, provident officia asperiores optio blanditiis maxime! Assumenda
+        omnis ipsum culpa nisi perferendis ipsa numquam? Accusamus repellat ipsum maiores nulla voluptatem eveniet autem
+        alias.
+    </h1>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+.one{
+    padding: 0 60px;
+}
+nav{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    height: 440px;
+    justify-content: center;
+    gap: 12px;
+}
+.over{
+    background-color: pink;
+    width: 900px;
+    display: flex;
+    gap: 12px;
+    overflow: auto;
+    margin: auto;
+    scrollbar-width: none;
+}
+.bg{
+    min-width: 300px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.hold{
+    background-color: blueviolet;
+    height: 100px;
+}
+.hold img{
+    float: right;
+}
+#close{
+    display: none;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 500px;
+    justify-content: space-between;
+    border: 0;
+    padding: 12px 20px;
+}
+.drop{
+    width: 500px;
+    background-color: blue;
+    padding: 12px 20px;
+    display: none;
+}
+.drop p:nth-child(even){
+    margin: 12px 0 0 0;
+    background-color: rebeccapurple;
+}
+/* .holder:focus-within .drop{
+    display: block;
+}
+.holder:focus-within #add{
+    display: none;
+}
+.holder:focus-within #close{
+    display: block;
+} */
+ .holder:hover .drop{
+    display: block;
+ }

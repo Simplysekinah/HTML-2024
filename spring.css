@@ -1,0 +1,200 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: whitesmoke;
+            display: flex;
+            padding: 10px 30px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .right{
+            display: flex;
+            gap: 10px;
+        }
+        .parent{
+            position: relative;
+        }
+        .drop{
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .parent:hover .drop{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+        .section-one{
+            background: linear-gradient(limegreen, whitesmoke);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+        .center{
+            display: flex;
+            gap: 10px;
+        }
+        .spread,.spreads{
+            border: 1px solid black;
+            width: 180px;
+            color: black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 16px;
+            font-weight: 600;
+            z-index: 0;
+            left: 0;
+            top: 0;
+        }
+        .spread::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: black;
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+        .spread:hover{
+            color: white;
+        }
+        .spread:hover::before{
+            width: 100%;
+        }
+        .show{
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+        .showing{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .rights{
+            display: none;
+        }
+        .rights:focus-within .show{
+            top: 0;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 20px 0;
+            background-color: transparent;
+            color: white;
+        }
+        .holder{
+            /* background-color: brown; */
+            width: 24%;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .holder img{
+            width: 150px;
+        }
+        .holder p{
+            width: 60%;
+            background-color: aquamarine;
+            font-size: 20px;
+            text-align: center;
+        }
+        .section-two{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 30px;
+        }
+        .section-three{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .section-three img{
+            width: 80%;
+            height: 250px;
+        }
+        .section-three div:nth-child(1){
+            width: 600px;
+            background-color: aquamarine;
+        }
+        
+        .section-three div:nth-child(2) p:nth-child(even){
+            background-color: aqua;
+            width: 60%;
+            font-size: 18px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* media Query */
+
+        @media (max-width:1015.33px) {
+            .rights{
+                display: block;
+            }
+            .right{
+                display: none;
+            }
+            .holder{
+                width: 45%;
+            }
+        }
+        @media (max-width:768px) {
+            .holder{
+                width: 100%;
+            }
+            .holder p{
+                width: 100%;
+            }
+            .section-three{
+                flex-direction: column;
+                justify-content: center;
+            }
+            .section-three div:nth-child(1){
+                width: 80%;
+                background-color: aquamarine;
+            }
+        }

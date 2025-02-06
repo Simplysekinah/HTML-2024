@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgba(222, 184, 135, 0.203);
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+}
+.up{
+    background-color: whitesmoke;
+    padding: 0 80px;
+}
+.down{
+    padding: 30px 15px;
+    background-color: whitesmoke;
+    margin: 15px 0 0 0;
+}
+.left img{
+    width: 200px;
+}
+.right{
+    display: flex;
+    gap: 20px;
+}
+.right a{
+    color: black;
+    text-decoration: none;
+}
+#up{
+    padding: 60px 0;
+}
+.div-up{
+    background-image: url(../../../Downloads/Isimi-lagos\ \(1\).jpg);
+    height: 100vh;
+    padding: 30px;
+}
+.div-down{
+    background-image: url(../../../Downloads/Isimi-lagos\ \(1\).jpg);
+    height: 100vh;
+    padding: 30px;
+    margin: 35px  0 0 0;
+}
+.contain{
+    border: 1px solid white;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contain h1{
+    background-color: blue;
+    width: 150px;
+    text-align: center;
+}      
+.contain p{
+    background-color: blue;
+    width: 600px;
+    text-align: center;
+}     
