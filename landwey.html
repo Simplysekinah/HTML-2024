@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            padding: 0 60px;
+        }
+        .left img{
+            width: 250px;
+        }
+        .drop1{
+            background-color: red;
+            border-top: 3px solid orange;
+            position: absolute;
+            right: 0;
+            display: none;
+        }
+        .parent{
+            position: relative;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .master{
+            background-color: wheat;
+        }
+        .parent:hover .drop1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="master">
+            <nav>
+                <div class="left">
+                    <img src="https://landwey.ng/wp-content/uploads/2023/12/logo-main-black.png" alt="">
+                </div>
+                <div class="parent">
+                    <div>
+                        <div style="padding: 2px 5px;">About</div>
+                    </div>
+                    <div class="drop1">
+                        <div class="drop2">
+                            <div>Ourwey</div>
+                        </div>
+                        <div>WeyTv</div>
+                        <div>WeyTv</div>
+                        <div>WeyTv</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>

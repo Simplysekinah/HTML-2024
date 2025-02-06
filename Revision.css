@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background-color: chocolate;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    outline: 2px solid palegreen;
+    font-family: cursive;
+}
+.bgi{
+    background-image: url(../../../Pictures/buffet-dubai.PNG);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+.flex span{
+    display: block;
+}
+.box{
+    background-color: brown;
+    width: 400px;
+    display: flex;
+    gap: 5px;
+    overflow: auto;
+}
+.boxes{
+    background-color: purple;
+    min-width: 50px;
+    height: 50px;
+}
+.wrap{
+    width: 500px;
+    background-color: beige;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.son{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.fiv{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
