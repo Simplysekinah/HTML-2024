@@ -1,0 +1,54 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   .first-section {
+       background-image: url('./netflix\ images_files/netflix images_files/NG-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c68e8578-1a3a-42fd-92b0-ab191c4417ec_small.jpg');
+   }
+
+   .image-1 {
+       width: 200px;
+       height: 50px;
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .btn1 {
+       background-color: rgb(229, 9, 20);
+       color: white;
+       width: 100px;
+       height: 50px;
+   }
+
+   .middle {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 120px 0 0 0;
+   }
+
+   .second-section {
+       display: flex;
+       background-color: black;
+       padding: 50px 20px;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+   .left {
+       color: white;
+   }
+
+   .left p {
+       font-size: 30px;
+       width: 700px;
+   }
+
+   .right img {
+       width: 500px;
+   }

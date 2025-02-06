@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            padding: 0px 60px;
+            background-color: #f3f3f3;
+            /* height: 800px; */
+        }
+        .middle{
+            background-color: white;
+            /* height: 800px; */
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+        }
+        .img-con img{
+            width: 200px;
+        }
+        h1{
+            font-size: 55px;
+            font-weight: 900;
+        }
+        .center p{
+            /* width: 900px; */
+            text-align: center;
+            /* margin: auto; */
+
+        }
+        .center{
+            text-align: center;
+            padding: 40px 110px;
+        }
+        .left{
+            background-color: #f3f3f3;
+            width: 50%;
+            height: 600px;
+            border-radius: 20px;
+        }
+        .right{
+            background-color: #f3f3f3;
+            width: 50%;
+            height: 600px;
+            border-radius: 20px;
+        }
+        .down{
+            display: flex;
+            width: 100%;
+            padding: 60px;
+            gap: 20px;
+        }
+        .left-img{
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            height: 450px;
+        }
+        .div-left{
+            padding: 10px;
+        }
+        .image{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+        .image div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .parent{
+            position: relative;
+        }
+        .drop1{
+            background-color: #f3f3f3;
+            border-top: 3px solid orange;
+            padding: 15px;
+            width: 250px;
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        .parent:hover .drop1{
+            display: block;
+        }
+        .about{
+            padding: 8px;
+        }
+
+
+
+
+
+
+
+
+
+        /* media query */
+        @media (max-width:1029.33px) {
+            main{
+                padding: 0px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="middle">
+            <nav>
+                <div class="img-con">
+                    <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+                </div>
+                <div class="parent">
+                    <div class="about">About</div>
+                    <div class="drop1">
+                        <div>
+                            <p>Our Wey</p>
+                        </div>
+                        <p>Our Wey</p>
+                        <p>Our Wey</p>
+                        <p>Our Wey</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="center">
+                <h1>New homes like no other.</h1>
+                <p>When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for their design excellence, build quality and customer satisfaction.</p>
+            </div>
+            <div class="down">
+                <div class="left">
+                    <img class="left-img" src="https://landwey.ng/wp-content/uploads/2023/01/TErra-gardens.jpg" alt="">
+                    <div class="div-left">
+                        <p>Terraces at Terra Gardens</p>
+                        <div>Monastery Road, Sangotedo, Lekki</div>
+                        <div class="image">
+                            <div>
+                                <span class="material-symbols-outlined">exercise</span>
+                                <p>Gym</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">exercise</span>
+                                <p>Gym</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">exercise</span>
+                                <p>Gym</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">exercise</span>
+                                <p>Gym</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
