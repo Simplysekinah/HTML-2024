@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anim{
+            width: 200px;
+            height: 200px;
+            background-color: darkolivegreen;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes move {
+           0%{
+                background: linear-gradient(red, yellow);
+                margin: auto;
+                border-radius: 100px 200px;
+           } 
+           50%{
+                background-color: blueviolet;
+                padding: 20px;
+                border-radius: 50%;
+           }
+           100%{
+                background: linear-gradient(pink, yellow);
+                margin: auto;
+                border-radius: 100px 200px;
+           } 
+        }
+    </style>
+</head>
+<body>
+    <div class="anim"></div>
+    <video controls loop  src="https://youtu.be/3Ata4L_0YN4"></video>
+    <iframe width="859" height="483" src="https://www.youtube.com/embed/3Ata4L_0YN4" title="Late Night Feels Playlist (pt.2) | SZA, Yung Bleu, Chris Brown, Drake, Jhene Aiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
