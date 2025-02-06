@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .none{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+        .block{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+        .hold:hover .block{
+            display: block;
+        }
+        #hold span{
+            display: block;
+        }
+        .flex h1{
+            display: inline-flex;
+        }
+        .dlac{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        .red{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+        .show{
+            display: flex;
+        }
+        .drop{
+            display: none;
+        }
+        .focus-within:focus-within .drop{
+            display: block;
+        }
+        .drop p{
+            margin: -5px 0 0 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .acc{
+            width: 90%;
+            height: 50px;
+            background-color: brown;
+        }
+        .acc button{
+            width: 90%;
+            height: 50px;
+            background-color: chocolate;
+        }
+        .lor{
+            display: none;
+        }
+        .accs:focus-within .lor{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="none"></div>
+        <div class="hold">
+            <div>Sqi</div>
+            <div class="block"></div>
+        </div>
+        <div id="hold">
+            <span>Sqi college</span>
+            <span>Sqi college</span>
+            <span>Sqi college</span>
+            <span>Sqi college</span>
+        </div>
+        <div class="flex">
+            <span>Lorem, ipsum.</span>
+            <span>Lorem, ipsum.</span>
+            <span>Lorem, ipsum.</span>
+            <span>Lorem, ipsum dolor.</span>
+        </div>
+        <div class="flex">
+            <h1>Lorem, ipsum.</h1>
+            <h1>Lorem, ipsum.</h1>
+            <h1>Lorem, ipsum.</h1>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+        <div class="show">
+
+            <div class="dlac"></div>
+            <div class="red"></div>
+        </div>
+        <div class="focus-within">
+            <button>click me</button>
+            <div class="drop">
+                <p>show</p>
+                <p>show</p>
+                <p>show</p>
+                <p>show</p>
+            </div>
+        </div>
+        <ul>
+            <li>temi</li>
+            <li>temi</li>
+            <li>temi</li>
+            <li>temi</li>
+        </ul>
+        <div class="acc">
+            <button>What is Netflix</button>
+        </div>
+        <button class="accs">
+            <div>What is Netflix</div>
+            <div class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis!</div>
+        </button>
+    </div>
+</body>
+</html>
