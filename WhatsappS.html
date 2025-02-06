@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81f35a7969.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .iphone-frame{
+            border: 8px solid black;
+            border-radius: 30px;
+            margin: auto;
+            width: 320px;
+            height: 490px;
+            position: relative;
+        }
+        footer{
+            background-color: antiquewhite;
+            position: absolute;
+            bottom: 0;
+            width: 305px;
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+        }
+        footer button{
+            background-color: transparent;
+            border: 0;
+        }
+        .main-one div, .main-two div, .main-three div, .main-four div, .main-five div{
+            font-size: 10px;
+        }
+        .section-one{
+            width: 100%;
+            background-color: red;
+            height: 438px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            border-radius: 20px 20px 0 0;
+            display: none;
+            z-index: 1;
+        }
+        .section-two{
+            width: 100%;
+            background-color: gold;
+            height: 438px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            border-radius: 20px 20px 0 0;
+            display: none;
+            z-index: 1;
+        }
+        .section-three{
+            width: 100%;
+            background-color: chartreuse;
+            height: 438px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            border-radius: 20px 20px 0 0;
+            display: none;
+            z-index: 1;
+        }
+        .section-four{
+            width: 100%;
+            background-color: rebeccapurple;
+            height: 438px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            border-radius: 20px 20px 0 0;
+        }
+        .section-five{
+            width: 100%;
+            background-color: blue;
+            height: 438px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            border-radius: 20px 20px 0 0;
+            display: none;
+            z-index: 1;
+        }
+        .one:focus .section-one{
+            display: block;
+        }
+        .two:focus .section-two{
+            display: block;
+        }
+        .three:focus .section-three{
+            display: block;
+        }
+        .five:focus .section-five{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="iphone-frame">
+        <footer>
+            <button class="one">
+                <div class="main-one">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>status</div>
+                </div>
+                <section class="section-one"></section>
+            </button>
+            <button class="two">
+                <div class="main-two">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>status</div>
+                </div>
+                <section class="section-two"></section>
+            </button>
+            <button class="three">
+                <div class="main-three">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>status</div>
+                </div>
+                <section class="section-three"></section>
+            </button>
+            <button class="four">
+                <div class="main-four">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>status</div>
+                </div>
+                <section class="section-four"></section>
+            </button>
+            <button class="five">
+                <div class="main-five">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>status</div>
+                </div>
+                <section class="section-five"></section>
+            </button>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .first::first-line{
+            background-color: chocolate;
+            color: white;
+            font-weight: bold;
+        }
+        .line::first-letter{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+        }
+        .name::before{
+            content: 'Akinola ';
+            /* content: url(); */
+        }
+        .name::after{
+            content: ' Folashade';
+        }
+        ::marker{
+            font-size: 30px;
+            color: chartreuse;
+        }
+        ::placeholder{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>First line psuedo-element</div>
+    <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugit, dolores voluptates eum porro nostrum minus amet explicabo excepturi doloribus? Architecto dignissimos est labore enim voluptatibus et reprehenderit dolore necessitatibus.
+    Inventore soluta recusandae excepturi dolor, suscipit voluptas aperiam omnis. Deserunt, amet. Ut sint consequatur fugiat magni eius molestiae harum nobis iure eos, quis nam dolorem impedit enim natus beatae dolore.
+    Ea est ducimus amet. Natus similique fugit illum dolorem quo accusamus, tempora placeat voluptatem a ullam repellendus aut explicabo dolore quia temporibus dolores esse numquam architecto atque distinctio corporis? Minus!
+    Reiciendis odio facilis voluptatum amet, est eaque cumque ab odit, consectetur facere aspernatur adipisci quos omnis debitis ipsam maiores consequuntur a similique eum veritatis. Aspernatur eveniet nostrum laboriosam ipsam fugiat.
+    Eum sed voluptate laudantium amet commodi adipisci rem unde nisi ex praesentium, tenetur a laborum cumque illum quaerat consequatur harum ab voluptates dignissimos odit corporis ratione? Voluptate quis ullam eum!</div>
+    <p>firstletter</p>
+    <div class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="name"> Sekinat</div>
+    <ul>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+    </ul>
+    <ol>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+        <li>sqi</li>
+    </ol>
+    <input type="text" placeholder="Email">
+</body>
+</html>

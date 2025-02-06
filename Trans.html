@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .trans{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            margin: auto;
+        }
+        .trans:hover{
+            transform: translate(-200px, -100px);
+            /* transform: translateX(); */
+        }
+        .rotat{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            margin: auto;
+            transition: all 1s linear;
+        }
+        .rotat:hover{
+            transform: rotate(-300deg);
+        }
+        .scal{
+            width: 200px;
+            height: 200px;
+            /* background-color: red; */
+            background: linear-gradient(red, yellow);
+            margin: auto;
+            transition: all 1s linear;
+        }
+        .scal:hover{
+            transform: scale(0.2);
+        }
+        .ske{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            margin: auto;
+            transition: all 1s linear;
+        }
+        .ske:hover{
+            transform: skew(150deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="trans"></div>
+    <div class="rotat"></div>
+    <div class="scal"></div>
+    <div class="ske"></div>
+</body>
+</html>
