@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            display: none;
+        }
+        .main:hover #show{
+            display: block;
+        }
+        .span span{
+            display: block;
+        }
+        .block p{
+            /* display: inline-block; */
+        }
+        .block{
+            display: flex;
+        }
+        .hov{
+            transition-delay: 3s;
+        }
+        .hov:hover{
+            background-color: bisque;
+            width: fit-content;
+        }
+        .focus:focus{
+            background-color: brown;
+        }
+        .active:active{
+            background-color: red;
+            color: white;
+        }
+        .show{
+            display: none;
+        }
+        .container:focus-within .show{
+            display: block;
+        }
+        .square{
+            min-width: 200px;
+            height: 200px;
+            background-color: coral;
+        }
+        #container{
+            background-color: red;
+            width: 500px;
+            display: flex;
+            gap: 5px;
+            height: 400px;
+            overflow: auto;
+            flex-wrap: wrap;
+        }
+        #container::-webkit-scrollbar{
+            display: none;
+        }
+        .relative{
+            background-color: palevioletred;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 50px;
+        }
+        .absolute{
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+        }
+        .mother{
+            background-color: aqua;
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+        .son{
+            background-color: beige;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50px;
+        }
+        .fixed{
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            /* position: fixed; */
+            top: 0;
+            z-index: 1;
+        }
+        .sticky{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            position: sticky;
+            bottom: 50%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .drop1{
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            border-top: 3px solid orange;
+            padding: 15px;
+            right: 0;
+            width: 200px;
+        }
+        .holder{
+            position: relative;
+        }
+        .holder:hover .drop1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <div>
+                <img src="" alt="picture">
+            </div>
+            <div class="holder">
+                <div>about</div>
+                <div class="drop1">
+                    <p>Our wey</p>
+                    <p>Our wey</p>
+                    <p>Our wey</p>
+                    <p>Our wey</p>
+                </div>
+            </div>
+        </nav>
+        <p>displaynone,block,flex,inline-block,inline-flex</p>
+        <div class="main">
+            <p>sqi</p>
+            <div id="show"></div>
+        </div>
+        <div class="span">
+            <span>sqi</span>
+            <span>sqi</span>
+            <span>sqi</span>
+            <span>sqi</span>
+        </div>
+        <div class="block">
+            <p>show</p>
+            <p>show</p>
+            <p>show</p>
+            <p>show</p>
+        </div>
+        <div class="fixed"></div>
+        <div class="hov">simplysekinah</div>
+        <button class="focus">click me</button>
+        <div class="active">active</div>
+        <div>focus-within</div>
+        <div class="container">
+            <input type="text">
+            <div class="show">
+                <p>sqi</p>
+                <p>sqi</p>
+                <p>sqi</p>
+                <p>sqi</p>
+            </div>
+        </div>
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div>
+            <p>Positioning</p>
+            <div class="relative"></div>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div class="absolute"></div>
+            <div class="sticky"></div>
+            <div class="mother">
+                <div class="son"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

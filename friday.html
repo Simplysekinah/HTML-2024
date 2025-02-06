@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto";
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        .box1 {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            margin: 0px 40px 0px 30px;
+        }
+
+        #box {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+        }
+
+        #sqi {
+            border: 1px solid blue;
+            width: 200px;
+            text-align: end;
+        }
+        #close{
+            display: none;
+        }
+        button{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main div{
+            width: 400px;
+            background-color: black;
+            color: white;
+            display: none;
+        }
+        .p-down{
+            width: 500px;
+            background-color: red;
+        }
+        main:focus-within div{
+            display: block;
+        }
+        main:focus-within #add{
+            display: none;
+        }
+        main:focus-within #close{
+            display: block;
+        }
+        .up{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+        .down{
+            display: none;
+        }
+        a:focus .down{
+            display: block;
+        }
+        a:focus #add{
+            display: none;
+        }
+        a:focus #close{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        margin $ padding
+        <div class="box1"></div>
+        <div class="box1"></div>
+        padding
+        <div id="box"></div>
+        <p id="sqi">sqi</p>
+        <span class="material-symbols-outlined">home</span>
+        <main>
+            <button>
+                <p>What is Netflix</p>
+                <span class="material-symbols-outlined" id="add">add</span>
+                <span class="material-symbols-outlined" id="close">close</span>
+            </button>
+            <div>
+                <p class="p-down">dtfhh2egdghkwelderklermcfnercfmldfn3rkldfj13kvj3ricfj3ofy3ikrdy3rg934drfoufyf4ujuhfu345fi4fydirdfyghkuedt3ioduidhycdf34ygd3jydf34udfh4u8df</p>
+            </div>
+        </main>
+        <a href="#">
+            <div class="up">
+                <p>What is Netflix</p>
+                <span class="material-symbols-outlined" id="add">add</span>
+                <span class="material-symbols-outlined" id="close">close</span>
+            </div>
+            <div class="down">
+                <p class="">dtfhh2egdghkwelderklermcfnercfmldfn3rkldfj13kvj3ricfj3ofy3ikrdy3rg934drfoufyf4ujuhfu345fi4fydirdfyghkuedt3ioduidhycdf34ygd3jydf34udfh4u8df</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

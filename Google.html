@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81f35a7969.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            /* height: 100vh; */
+        }
+        main{
+            padding: 15px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            background-color: aquamarine;
+        }
+        .first-btn{
+            border: none;
+            background-color: transparent;
+            position: relative;
+        }
+        .google{
+            background-color: black;
+            width: 100px;
+            color: white;
+            border-radius: 5px;
+            padding: 3px;
+            /* display: none; */
+            visibility: hidden;
+            transition: all 1s linear;
+            position: absolute;
+            top: 20px;
+            left: -80px;
+        }
+        .first-btn:hover .google{
+            /* display: block; */
+            visibility: visible;
+        }
+        .middle{
+            background-color: cadetblue;
+        }
+        .second-btn{
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            padding: 5px 10px;
+            position: relative;
+        }
+        .second-btn:hover .google{
+            /* display: block; */
+            visibility: visible;
+        }
+        .focus-one{
+            background-color: black;
+            width: 200px;
+            height: 300px;
+            color: white;
+            border-radius: 5px;
+            padding: 3px;
+            display: none;
+            /* visibility: hidden; */
+            transition: all 1s linear;
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+        .first-btn:focus .focus-one{
+            display: block;
+        }
+        #apps:hover{
+            background-color: lightgray;
+            border-radius: 50%;
+        }
+        #apps{
+            padding: 8px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="">Gmail</a>
+            <a href="">Image</a>
+            <button class="first-btn">
+                <i class="fa-solid fa-grip" id="apps"></i>
+                <div class="google">Google Apps</div>
+                <div class="focus-one"></div>
+            </button>
+            <button class="second-btn">A
+                <div class="google">
+                    <div>Google Account</div>
+                    <div>Google Account</div>
+                    <div>Google Account</div>
+                </div>
+            </button>
+        </nav>
+        <div class="middle">
+            <div class="gog">Google</div>
+            <div class="inputs"></div>
+            <div class="wrap"></div>
+        </div>
+    </main>
+</body>
+</html>

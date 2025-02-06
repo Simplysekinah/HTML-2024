@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+nav{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+}
+.one{
+    display: flex;
+    gap: 15px;
+}
+.one img{
+    width: 100px;
+}
+.two{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.input{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    width: 400px;
+    padding: 2px;
+    align-items: center;
+}
+.input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: white;
+    padding: 3px 5px;
+}
+.two button{
+    border: none;
+    background-color: transparent;
+    padding: 5px 8px;
+}
+.two .btn1:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+ .input .btn{
+    border-left: 1px solid lightgray;
+    /* padding: 0; */
+}
+.first, .second{
+    position: relative;
+}
+.create,.creates{
+    display: none;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 30px;
+    padding: 5px;
+    /* z-index: 10; */
+}
+.first:hover .create, .second:hover .creates{
+    display: block;
+}
+.first:focus-within .record{
+    display: block;
+}
+.record{
+    display: none;
+    position: absolute;
+    left: -20px;
+    width: 110px;
+    padding: 5px;
+    background-color: white;
+}
+.record div{
+    display: flex;
+    font-size: 12px;
+}
+.notify{
+    background-color: blue;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    display: none;
+}
+.second:focus-within .notify{
+    display: block;
+}
+.three{
+    display: flex;
+    gap: 5px;
+}
+.middle{
+    display: flex;
+    height: 92vh;
+}
+aside{
+    width: 15%;
+    height: 90vh;
+    background-color: brown;
+    overflow: auto;
+    /* position: fixed; */
+    left: 0;
+}
+header{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    overflow: auto;
+    /* position: sticky;
+    top: 50px; */
+    /* z-index: -1; */
+}
+header::-webkit-scrollbar{
+    display: none;
+}
+.right{
+    background-color: chartreuse;
+    width: 85%;
+    height: 92vh;
+    /* z-index: 1; */
+    /* position: relative; */
+    /* height: 514px; */
+    /* overflow: auto; */
+}
+.down{
+    background-color: palevioletred;
+    width: 100%;
+    height: 86vh;
+    overflow: auto;
+    padding: 30px 8px 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.div{
+    background-color: red;
+    width: 24%;
+    height: 300px;
+    border-radius: 10px;
+}
+.side{
+    width: 300px;
+    height: 100vh;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Query */
+@media (max-width: 1287.67px) {
+    aside{
+        width: 5%;
+    }
+    .right{
+        width: 95%;
+    }
+    .div{
+        width: 30%;
+    }
+    .side-div:focus-within .side{
+        left: 0;
+    }
+}
+
+@media (max-width:1096.67px) {
+    .div{
+        width: 45%;
+    }
+    .input{
+        width: 300px;
+    }
+}
+
+@media (max-width:790px) {
+    aside{
+        display: none;
+    }
+    .right{
+       width: 100%;
+    }
+    .input{
+        width: 200px;
+    }
+}
+
+@media (max-width:699.17px) {
+    .div{
+        width: 80%;
+    }
+}
+@media (max-width:655px) {
+    .input input{
+        visibility: hidden
+    }
+    .input{
+        width: 20px;
+        border: none;
+        background-color: transparent;
+    }
+    .input .btn{
+        border: none;
+    }
+}

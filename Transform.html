@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            transition: all 1s ease-in-out;
+        }
+        .box2{
+            background-color: orangered;
+            width: 250px;
+            height: 250px;
+            transition: all 1s ease-in-out;
+            margin: 10px 0 0 0;
+        }
+        .box3{
+            background-color: yellowgreen;
+            width: 250px;
+            height: 250px;
+            transition: all 1s ease-in-out;
+            margin: 10px 0 0 0;
+        }
+        .box4{
+            background-color: lightskyblue;
+            width: 250px;
+            height: 250px;
+            transition: all 1s ease-in-out;
+            margin: 10px 0 0 0;
+        }
+        .box1:hover{
+            transform: translate(200px, 300px);
+        }
+        .box2:hover{
+            transform: rotate(180deg);
+        }
+        .box3:hover{
+            transform: scale(0.8,1.2);
+        }
+        .box4:hover{
+            transform: skew(220deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
