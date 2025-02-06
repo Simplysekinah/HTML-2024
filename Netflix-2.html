@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show:link{
+            color: blue;
+        }
+        .show:visited{
+            color: pink;
+        }
+        .show:hover{
+            background-color: rebeccapurple;
+        }
+        .box{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            /* transition-delay: 2s;
+            transition-duration: 1s;
+            transition-property: background-color, width;
+            transition-timing-function: ease; */
+            transition: all 1s ease-in;
+        }
+        .box:hover{
+            background-color: brown;
+            width: 250px;
+        }
+        .btn:hover{
+            background-color: red;
+            color: white;
+        }
+        .btn:active{
+            background-color: aqua;
+            color: red;
+        }
+        .am{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100px;
+            /* display: none; */
+            visibility: hidden;
+            transition-property: all;
+            transition-delay: 2s;
+            transition-timing-function: linear;
+        }
+        .parent{
+            transition: linear 1s ease-in;
+        }
+        .parent:hover .am{
+            /* display: block; */
+            visibility: visible;
+        }
+        /* Transistioning */
+    </style>
+</head>
+<body>
+    <!-- PSUEDO CLASS -->
+     <div>
+        <a href="#" class="show">click me</a>
+     </div>
+     <div class="box"></div>
+     <button class="btn">show</button>
+     <div class="parent">
+        <div class="About">About</div>
+        <div class="am">Am here</div>
+     </div>
+     <div>Ho</div>
+     <!-- focus -->
+</body>
+</html>

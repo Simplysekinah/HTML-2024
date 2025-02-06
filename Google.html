@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        main {
+            background-color: whitesmoke;
+        }
+
+        .underline:hover {
+            text-decoration: underline;
+        }
+
+        .btn1 {
+            border: none;
+            padding: 10px;
+            border-radius: 100%;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        .btn1:hover {
+            background-color: lightgray;
+        }
+
+        #menu {
+            color: white;
+        }
+
+        .gog {
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            padding: 4px;
+            /* top: 45px; */
+            right: 0;
+            /* display: none; */
+            visibility: hidden;
+            transition-property: all;
+            /* transition-duration: 2s; */
+            transition-delay: 2s;
+            transition-timing-function: linear;
+        }
+
+        .apps-main {
+            position: relative;
+        }
+
+        .apps-main:hover .gog {
+            /* display: block; */
+            visibility: visible;
+        }
+
+        .main-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+
+        .dropdown {
+            background-color: rgba(0, 0, 0, 0.877);
+            width: 370px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 8px;
+            height: 300px;
+            overflow: auto;
+            gap: 10px;
+        }
+
+        .first-drop {
+            background-color: black;
+            width: 330px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .second-drop {
+            background-color: black;
+            width: 330px;
+            border-radius: 10px 10px 20px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .gog-img {
+            /* background-color: antiquewhite; */
+            text-align: center;
+            padding: 5px;
+            width: 90px;
+        }
+
+        .gog-img:hover {
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        .gog-img img,
+        .gog-imgs img {
+            width: 40px;
+        }
+
+        .gog-img p,
+        .gog-imgs p {
+            color: white;
+        }
+
+        .last-drop {
+            border: 1px solid lightgray;
+            padding: 8px 16px;
+            border-radius: 15px;
+            width: fit-content;
+        }
+
+        .last-drop a {
+            text-decoration: none;
+            color: rgb(0, 136, 255);
+        }
+
+        .apps-main:focus-within .main-dropdown {
+            display: block;
+        }
+
+        .middle {
+            text-align: center;
+            margin: 60px 0 0 0;
+        }
+
+        .input {
+            border: 1px solid lightgray;
+            width: 600px;
+            padding: 4px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        .input input {
+            width: 500px;
+            border: none;
+            outline: none;
+            /* height: 15px; */
+            padding: 7px;
+            background-color: transparent;
+        }
+
+        .gog-imgs {
+            /* background-color: antiquewhite; */
+            text-align: center;
+            padding: 10px 20px 20px 20px;
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+        .gog-imgs:hover{
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        #vert {
+            align-self: flex-end;
+            margin: 0 0 0 50px;
+            visibility: hidden;
+            color: white;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+        }
+        .gog-imgs:hover #vert{
+            visibility: visible;
+        }
+        .more{
+            display: none;
+            background-color: white;
+            color: black;
+            width: 250px;
+            padding: 3px;
+            border-radius: 3px;
+            transition-property: all;
+            transition-delay: 2s;
+            transition-timing-function: linear;
+            position: absolute;
+            left: 30px;
+        }
+        .vert{
+            position: relative;
+            transition-property: all;
+            transition-delay: 2s;
+            transition-timing-function: linear;
+        }
+        .vert:hover .more{
+            display: block;
+        }
+        .bottom{
+            display: flex;
+            /* background-color: blueviolet; */
+            gap: 5px;
+            width: 630px;
+            flex-wrap: wrap;
+            margin: 10px auto;
+            justify-content: space-between;
+        }
+        .btn-down{
+            border: none;
+            background-color: transparent;
+        }
+        .show{
+            background-color: black;
+            color: bisque;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            display: none;
+            position: absolute;
+            right: 0;
+            padding: 5px 0;
+        }
+        .vert:focus-within .show{
+            display: block;
+        }
+        .show div:nth-child(odd):hover, .show div:nth-child(even):hover{
+            background-color: rgba(211, 211, 211, 0.683);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <span class="underline">Gmail</span>
+            <span class="underline">Images</span>
+            <div class="apps-main">
+                <button class="btn1">
+                    <span class="material-symbols-outlined" id="menu">apps</span>
+                </button>
+                <div class="gog">Google Apps</div>
+                <div class="main-dropdown">
+                    <div class="dropdown">
+                        <div class="first-drop">
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="second-drop">
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                            <div class="gog-img">
+                                <img src="goggle.png" alt="">
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="last-drop">
+                            <a href="">More from Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>A</button>
+        </nav>
+        <div class="middle">
+            <img src="main-google.png" alt="">
+        </div>
+        <div class="input">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text">
+            <span class="material-symbols-outlined">mic</span>
+            <span class="material-symbols-outlined">photo_camera</span>
+        </div>
+        <div class="bottom">
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+            <div class="gog-imgs">
+                <div class="vert">
+                    <button class="btn-down">
+                        <span class="material-symbols-outlined" id="vert">more_vert</span>
+                    </button>
+                    <div class="more">More actions for google shortcut</div>
+                    <div class="show">
+                        <div>Edit</div>
+                        <div>shortcut</div>
+                    </div>
+                </div>
+                <img src="goggle.png" alt="">
+                <p>Google</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

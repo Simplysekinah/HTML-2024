@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .translate{
+            width: 250px;
+            height: 250px;
+            background-color: chocolate;
+            transition: all 1s linear;
+        }
+        .translate:hover{
+            transform: translate(0,200px);
+        }
+        .rotate{
+            background-color: brown;
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            transition: all 2s ease-in;
+        }
+        .rotate:hover{
+            transform: rotate(-80deg);
+        }
+        .scale{
+            width: 250px;
+            height: 200px;
+            background-color: crimson;
+            border-radius: 20px 140px 40px 180px;
+            transition: all 2s ease-out;
+        }
+        .scale:hover{
+            transform: scale(1.05);
+        }
+        .skew{
+            background-color: darkkhaki;
+            width: 300px;
+            height: 350px;
+            border-radius: 0px 0px 50px 50px;
+            transition: all 1s ease-in-out;
+        }
+        .skew:hover{
+            transform: skew(160deg);
+        }
+        .sqi::before{
+            content: url(https://edu.sqi.ng/wp-content/uploads/2019/01/co.jpg);
+        }
+        .sqi::after{
+            content: ' College of ICT';
+        }
+        .show{
+            width: 100px;
+            text-align: center;
+            border: 1px solid black;
+            height: 30px;
+            box-shadow: inset 0 0 0 0 black;
+            transition: ease-out 0.3s;
+        }
+        .show:hover{
+            box-shadow: inset 300px 0 0 0 black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>Translate</div>
+        <div class="translate"></div>
+        <div>Rotate</div>
+        <div class="rotate"></div>
+        <div>Scale</div>
+        <div class="scale"></div>
+        <div>Skew</div>
+        <div class="skew"></div>
+        <div class="sqi">SQI</div>
+        <div class="show">Learn</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,96 @@
+.animation-box{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes move {
+    from{
+        width: 400px;
+        height: 400px;
+        transform: rotate(200deg);
+        border-radius: 20px;
+    }
+    to{
+        border-radius: 100%;
+        margin: auto;
+        padding: 30px;
+        transition: all linear 0.5s;
+        background: linear-gradient(red,yellow);
+    }
+} */
+
+@keyframes move {
+    0%{
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background-color: cornflowerblue;
+    }
+    10%{
+        box-shadow: inset red;
+        background: linear-gradient(pink, plum);
+        margin: 10px auto;
+    }
+    20%{
+        box-shadow: inset wheat;
+        background: linear-gradient(yellow, plum);
+        margin: 10px auto;
+        border-radius: 30%;
+    }
+    30%{
+        box-shadow: inset gold;
+        background: linear-gradient(purple, plum);
+        margin: 10px auto;
+        width: 300px;
+        height: 300px;
+    }
+    40%{
+        box-shadow: inset palevioletred;
+        background: linear-gradient(green, yellowgreen);
+        margin: 10px auto;
+        transform: scale(1.5);
+    }
+    50%{
+        box-shadow: inset yellow;
+        background: linear-gradient(pink, plum);
+        margin: 10px auto;
+    }
+    60%{
+        box-shadow: inset red;
+        background: linear-gradient(red, green);
+        margin: 10px auto;
+        border-radius: 100%;
+    }
+    70%{
+        box-shadow: inset gold;
+        background: linear-gradient(rgb(255, 192, 239), plum);
+        margin: 10px auto;
+        transform: rotate(150deg);
+    }
+    80%{
+        box-shadow: inset goldenrod;
+        margin: 10px auto;
+        background-image: url(Netflix-Logo-PNG-Images.png);
+    }
+    90%{
+        box-shadow: inset greenyellow;
+        background: linear-gradient(pink, goldenrod);
+        margin: 10px auto;
+        border-radius: 30%;
+        transform: translate(100px);
+    }
+    100%{
+        box-shadow: inset yellowgreen;
+        background-image: url(goggle.png);
+        margin: 10px auto;
+        width: 500px;
+        height: 500px;
+    }
+}
