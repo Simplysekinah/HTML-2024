@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: #554433;
+}
+.first-div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(30, 143, 255);
+    padding: 10px;
+}
+#first-div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(100, 205, 155);
+    padding: 10px;
+}

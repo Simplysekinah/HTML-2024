@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(blue,red);
+            background-repeat: no-repeat;
+            height: 100vh;
+            animation-name: Change;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        .Signal{
+            border: 1.8px solid gray;
+            background-color: blue;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 8px;
+            border-radius: 5px;
+            height: 50px;
+            animation: move 2s ease-in-out 3s infinite backwards;
+            transition: all 3s linear;
+        }
+        .hi,.ho,.hu{
+            animation: shift 2s ease-in-out 3s infinite ;
+        }
+        .hi,.ho,.hu{
+            animation: go 2s ease-in-out 3s infinite ;
+        }
+        .hi,.ho,.hu{
+            animation: come 2s ease-in-out 3s infinite ;
+        }
+        @keyframes Change {
+            from{
+                background: linear-gradient(plum,orangered);
+            }
+            to{
+                background: linear-gradient(dodgerblue,rebeccapurple);
+            }
+        }
+        @keyframes move {
+            0%{
+                transform: translate(1000px);
+            }
+            10%{
+                transform: translate(-200px,100vh);
+            }
+            25%{
+                transform: translate(250px,70vh);
+            }
+            50%{
+                transform: translate(500px,0);
+            }
+            75%{
+                transform: translate(250px,60vh);
+            }
+            100%{
+                transform: translate(0px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- animation name -->
+     <!-- animation duaration -->
+      <!-- aniamtion delay -->
+       <!-- animation iteration-count -->
+    <!-- <div class="Signal">No Signal</div> -->
+     <div class="hi">hi</div>
+     <div class="ho">hi</div>
+     <div class="hu">hi</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{
+            background-color: aquamarine;
+            position: static;
+            right: 0;
+        }
+        .relative{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 40px;
+            z-index: 1;
+        }
+        .absolute{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 40px;
+        }
+        .contain{
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            position: absolute;
+            left: 0;
+            display: none;
+        }
+        .contain:hover .box{
+            display: block;
+        }
+        .shape{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            visibility: hidden;
+            transition: all 1s ease-out 1s;
+        }
+        .parent:hover .shape{
+            visibility: visible;
+        }
+        .fixed{
+            background-color: crimson;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        .sticky{
+            background-color: burlywood;
+            width: 80px;
+            height: 80px;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">position static</div>
+    <!-- <div class="relative">relative</div> -->
+    <!-- <div class="absolute">absolute</div> -->
+    <div class="contain">
+        <div>About</div>
+        <div class="box"></div>
+    </div>
+    <div class="parent">
+        <div>Contact Us</div>
+        <div class="shape"></div>
+    </div>
+    <div class="fixed"></div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum facere, quis nihil, maxime omnis, optio quae eveniet aspernatur laboriosam illo recusandae facilis dolorem exercitationem? Possimus iste quam in minima fugit!
+    Optio adipisci dolor molestiae commodi ipsam accusantium reprehenderit dignissimos? Culpa hic minus eius iusto dignissimos nostrum corporis cupiditate tempore. Possimus eveniet vero deserunt culpa ratione! Vero pariatur laborum expedita adipisci?
+    Ratione optio odit deserunt voluptatibus, quidem hic ullam ducimus atque, doloribus suscipit expedita excepturi voluptatem. Aliquam voluptas enim ut architecto natus, similique ipsum, distinctio nesciunt earum saepe animi impedit expedita.</p>
+    <div class="sticky"></div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores numquam at voluptatum temporibus doloribus reiciendis quia ab ipsam mollitia, perferendis possimus tenetur error aspernatur iusto! Ab architecto officia impedit?
+    Architecto dolor, cumque sint magni asperiores nobis provident. Dolorum, consectetur eum voluptatem architecto harum error ipsum quae. Quibusdam, velit voluptatum! Enim, esse sit? Tenetur numquam doloremque et quod minima quae!
+    Itaque cum, molestiae velit, doloribus quos repellendus ad similique incidunt id corrupti unde obcaecati? Officia necessitatibus vero fuga quidem similique deserunt unde error nostrum sed officiis, commodi recusandae, dolore nihil?
+    Fugiat obcaecati asperiores temporibus eligendi ducimus labore dolorem debitis cumque repellendus ratione eaque veritatis nulla tempora deleniti cum facilis, accusantium id voluptatum atque soluta quo distinctio ipsam unde. Nemo, voluptatum!
+    Ea similique autem inventore, libero suscipit facere nostrum odit asperiores natus, ab id nesciunt reiciendis accusamus quo ipsum quos quibusdam nobis. Harum, totam explicabo debitis in obcaecati ab non quibusdam!
+    Temporibus, omnis. Aperiam magnam eveniet repellat sit, libero dicta atque cupiditate laboriosam earum repudiandae minus consequatur aliquam possimus est. Tempora rerum mollitia autem voluptate placeat, assumenda deserunt velit nostrum beatae?
+    Nemo blanditiis minima dolore voluptatem quaerat, reiciendis dolores dicta quidem eligendi, aliquam architecto vel iusto facilis veritatis? Sequi doloribus voluptate enim dolores est provident deserunt cum, modi autem, beatae eveniet!
+    Sapiente quo corporis quod aliquam, magnam nobis ipsum ipsam exercitationem dolore aperiam doloribus ducimus odit dicta distinctio est quae, optio quibusdam adipisci nesciunt illum? Modi tenetur sequi est quo quisquam?</h1>
+</body>
+</html>

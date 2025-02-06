@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            background-color: cadetblue;
+            display: flex;
+            gap: 5px;
+            overflow: auto;
+            /* overflow-x: auto; */
+        }
+
+        .square {
+            min-width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .contain {
+            background-color: darkblue;
+            width: 400px;
+            color: white;
+            height: 100px;
+            overflow: auto;
+            /* scrollbar-width: 0; */
+            /* overflow-y: auto; */
+        }
+
+        .contain::-webkit-scrollbar {
+            /* overflow: hidden; */
+            /* display: none; */
+        }
+
+        /* how to style overflow */
+        .contain::-webkit-scrollbar {
+            border-radius: 10px;
+            /* background-color: brown; */
+            width: 5px;
+            height: 50px;
+        }
+
+        .contain::-webkit-scrollbar-thumb {
+            background-color: red;
+            border-radius: 10px;
+            height: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease-in;
+        }
+
+        .box:hover {
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .shape{
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+        }
+        .drop{
+            display: flex;
+            gap: 10px;
+            margin: -100% 0 0 0;
+            transition: all 2s ease-in 1s;
+        }
+        .parent:focus-within .drop{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="contain">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus iure ad harum corporis
+            laboriosam quod unde vitae adipisci, eaque delectus modi quae, earum dicta impedit excepturi illo dolorem
+            ea?
+            Dolor ratione illo accusamus corporis dolore quis. Tempore exercitationem voluptatum excepturi quasi sed
+            fuga quisquam iusto fugiat rem totam dolore quis, provident deleniti, doloremque mollitia debitis cupiditate
+            porro asperiores. Mollitia.
+            Et quisquam velit illum. Rem eveniet vero non quae commodi culpa cum obcaecati, expedita impedit veritatis
+            tempore nemo debitis inventore quasi? Impedit fuga eius nam reprehenderit odio dicta hic atque?
+            Sit porro quis delectus deleniti quibusdam! Porro quia suscipit temporibus at voluptatibus beatae placeat
+            voluptate eveniet unde quaerat perferendis deleniti tempora tenetur blanditiis officiis, nesciunt ipsa
+            provident error totam vero.
+            Error, dolorem voluptates voluptatibus adipisci omnis deleniti nesciunt totam corporis possimus commodi
+            officia explicabo, consectetur molestiae quaerat beatae sapiente, impedit fugit sint quas. Reiciendis
+            cupiditate recusandae quis ad sint molestiae.
+            Soluta odio fugit, eaque beatae quod dolorum possimus quae minus, fugiat facere quidem ratione, suscipit
+            molestias dicta at non deleniti quia. Autem ab quo voluptatibus eum similique ipsum qui iure.
+            Aliquid tenetur molestias laboriosam nulla labore dolor temporibus odit, et repellat modi quibusdam sint
+            voluptate omnis, veniam, quos voluptates ea sequi magnam perspiciatis beatae ullam esse. Nulla expedita
+            quidem aliquid!</div>
+    </div>
+
+    <!-- transistioning -->
+    <div class="box"></div>
+    <div class="parent">
+        <button>click me</button>
+        <div class="drop">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+</body>
+
+</html>

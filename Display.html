@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            background-color: transparent;
+            border: 0;
+            width: 500px;
+        }
+        .beside{
+            display: flex;
+            justify-content: space-between;
+        }
+        .drop{
+            display: none;
+        }
+        #btn:focus .drop{
+            display: block;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .parent{
+            display: flex;
+            gap: 10px;
+            width: 300px;
+            height: 500px;
+            background-color: chartreuse;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 500px;
+            height: 250px;
+            background-color: dodgerblue;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .square{
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+        }
+        .holder{
+            background-color: palegreen;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .first,.second,.third{
+            background-color: crimson;
+            width: 300px;
+            height: 400px;
+        }
+        .break h1{
+            display: inline-flex;
+        }
+        .wrap{
+            width: 500px;
+            background-color: burlywood;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .shape{
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+        .wraps{
+            width: 500px;
+            background-color: burlywood;
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+        }
+        .shapes{
+            min-width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+        .scroll{
+            width: 500px;
+            background-color: burlywood;
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            height: 300px;
+        }
+        .shap{
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!-- Display -->
+     <!-- block,none,flex,inline-flex,inline-block , e.t.c -->
+    <button id="btn">
+        <div class="beside">
+            <p>What is Netflix</p>
+            <p>Add</p>
+        </div>
+        <div class="drop">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam numquam, accusamus cumque ratione illum dolore dignissimos ipsam rem fugit aliquam! Sequi rem in optio soluta nisi architecto aliquam quisquam vitae!</h3>
+        </div>
+    </button>
+    <button id="btn">
+        <div class="beside">
+            <p>Who are you?</p>
+            <p>Color of cloth</p>
+        </div>
+        <div class="drop">
+            <h3>Simplysekinah,stripe blue</h3>
+        </div>
+    </button>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="holder">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <div class="break">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+    <div class="wrap">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="wraps">
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+    </div>
+    <div class="scroll">
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+        <div class="shap"></div>
+    </div>
+</body>
+</html>

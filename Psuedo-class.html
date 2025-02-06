@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo-Class</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: rebeccapurple;
+        }
+
+        .box:hover {
+            background-color: dodgerblue;
+            border-radius: 50%;
+        }
+
+        .name:hover {
+            text-decoration: underline;
+        }
+
+        .href {
+            text-decoration: none;
+        }
+
+        #href {
+            text-decoration: none;
+        }
+
+        #href:visited {
+            color: red;
+        }
+
+        #href:link {
+            color: chartreuse;
+        }
+
+        #name:focus {
+            background-color: red;
+            color: white;
+        }
+
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+        }
+
+        #box:active {
+            background-color: orangered;
+        }
+
+        .drop {
+            background-color: green;
+            color: white;
+            display: none;
+        }
+
+        .container:focus-within .drop {
+            display: block;
+        }
+        .parent{
+            background-color: transparent;
+            border: none;
+        }
+        .down{
+            display: none;
+        }
+        .parent:focus .down{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Psuedo-Class -->
+    <div class="box"></div>
+    <div class="name">Sekinat</div>
+    <a href="" class="href">Sekinat</a>
+    <a href="#" id="href">link of SQI</a>
+    <button id="name">Clickme!!!</button>
+    <div id="box"></div>
+    <div class="container">
+        <input type="text">
+        <div class="drop">
+            <p>Am here!!!</p>
+            <p>Am here!!!</p>
+            <p>Am here!!!</p>
+        </div>
+    </div>
+    <button class="parent">
+        <div>About</div>
+        <div class="down">
+            <p>SQI</p>
+            <p>SQI</p>
+            <p>SQI</p>
+        </div>
+    </button>
+</body>
+
+</html>
