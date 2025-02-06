@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-div,.first-divs{
+    height: 540px;
+    overflow: auto;
+}
+p{
+    width: 95%;
+}
+
+
+
+/* media Query */
+
+@media (max-width: 575px) {
+    .first-div{
+        display: none;
+        margin: 50px 0 0 0;
+    }
+}

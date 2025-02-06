@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dev::first-letter{
+            font-size: 30px;
+            font-weight: bolder;
+            color: burlywood;
+        }
+        .dummy::first-line{
+            font-size: 30px;
+            color: brown;
+        }
+        input::placeholder{
+            color: chocolate;
+            font-size: 14px;
+            font-weight:  bold;
+        }
+        .image::after{
+            content: url(shopping.png);
+            width: 50px;
+        }
+        #image::before{
+            content: 'Dev';
+        }
+        #image::after{
+            content: 'code';
+        }
+        .trans{
+            width: 250px;
+            background-color: chocolate;
+            color: wheat;
+        }
+        .trans:hover{
+            transform: translate(10px, 20px);
+        }
+        .rotat{
+            width: 300px;
+            background-color: blue;
+            color: white;
+
+        }
+        .rotat:hover{
+            width:500px;
+            transform: rotate(180deg);
+            /* transition-duration: 5s;
+            transition-timing-function: linear;
+            transition-delay: 5s; */
+            /* transition:  5s linear 2s; */
+        }
+        .login{
+            background-color: olivedrab;
+            color: white;
+            width: 300px;
+            border-radius: 20px;
+        }
+        .login:hover{
+            transform: scale(1.1);
+        }
+        .scre{
+            background-color: red;
+            color: black;
+            width: 300px;
+            border-radius: 20px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .scre:hover{
+            transform: skew(180deg);
+        }
+        .anim{
+            background-color: coral;
+            color: brown;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            animation-name: moving;
+            animation-duration: 5s;
+            animation-timing-function: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moving {
+            20%{
+                background-color: orangered;
+                width: 450px;
+                margin: 50px 0 0 0;
+            }
+            50%{
+                background-color: red;
+                color: white;
+                width: 450px;
+                margin: 50px 0 0 0;
+            }
+            80%{
+                background-color: orangered;
+                width: 450px;
+                margin: 10px 50px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="dev">Aliyah the senior dev</p>
+        <div class="dummy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta inventore cum deserunt, sapiente minima minus. Voluptates sed enim a iste veniam cupiditate tempore, et harum saepe vitae aliquam assumenda pariatur.
+        Tempora, beatae cumque impedit minus explicabo earum iste quam nam omnis repudiandae asperiores doloremque minima error sunt neque, eius fugiat laboriosam voluptas quas. Quos cupiditate soluta blanditiis nemo, mollitia eum.
+        Quasi officiis consequatur amet necessitatibus natus ut cumque eos? Maiores repellendus fuga expedita unde aut? Quisquam perspiciatis quae similique cumque unde reprehenderit error illo, nesciunt autem corporis, impedit, culpa quia.
+        Architecto quasi eligendi fugiat dolore? A, natus ea ullam repellat quasi dicta odit aperiam vero numquam quos libero voluptatum quod, sit similique dolores iste odio ducimus incidunt error. Dicta, inventore.
+        Recusandae quidem ullam voluptatem, quasi tenetur, necessitatibus cum veritatis officiis animi assumenda cupiditate totam! Optio enim reprehenderit porro. Accusantium libero nihil quaerat iste facilis? Omnis aperiam quas officiis itaque natus.</div>
+        <input type="text" placeholder="Username">
+        <div class="image">Simplysekinah</div>
+        <div id="image">Simplysekinah</div>
+        <div>TRANSFORM</div>
+        <div class="trans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repellendus ex ullam quam sequi ipsa voluptatem ea nesciunt itaque? Placeat laudantium quidem quam molestias, nulla quas maxime consectetur exercitationem reprehenderit.
+        Delectus laudantium maiores dolores labore, sequi officiis voluptatum autem nostrum voluptatibus aperiam, molestiae, eaque fugiat? Veritatis tempore, nostrum vitae veniam voluptate eligendi magnam minus optio nobis soluta. Rerum, nisi aut.
+        </div>
+        <div class="rotat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repellendus ex ullam quam sequi ipsa voluptatem ea nesciunt itaque? Placeat laudantium quidem quam molestias, nulla quas maxime consectetur exercitationem reprehenderit.
+            Delectus laudantium maiores dolores labore, sequi officiis voluptatum autem nostrum voluptatibus aperiam, molestiae, eaque fugiat? Veritatis tempore, nostrum vitae veniam voluptate eligendi magnam minus optio nobis soluta. Rerum, nisi aut.
+            </div>
+            <button class="login">login</button>
+            <button class="scre">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dicta voluptatem incidunt culpa odio recusandae ad necessitatibus eius obcaecati aperiam et consequatur dolorum commodi alias possimus est neque, ea distinctio.</button>
+            <div class="anim">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus deleniti praesentium, rem dolorem vero excepturi tempore culpa quibusdam fugiat. Autem provident commodi ut a inventore, architecto ipsa distinctio consectetur!
+                Quos omnis quas vero dolorem sint ipsa! Consequatur eos eveniet esse rerum nulla sint quisquam consequuntur, alias vel a tempora illum vitae optio vero, ex nam quae quas! Optio, quos.
+                Odio voluptates illum voluptas vel rem modi tempora natus? Quae vel dolores enim qui dolorum minima architecto mollitia facilis ratione, corrupti nihil pariatur saepe unde impedit? Optio omnis asperiores nesciunt?
+                Ea error adipisci corporis deserunt autem? Id pariatur molestiae repudiandae eaque reprehenderit, voluptate voluptatibus illum rerum explicabo necessitatibus enim cumque dolores dolorem facere similique excepturi nulla veritatis. Eum, sunt culpa.
+                Dolorem incidunt repellendus maiores provident cumque adipisci nisi, laborum reprehenderit non nobis totam repellat et veniam magni omnis eum animi consequatur magnam eligendi vel nulla mollitia aperiam hic. Impedit, illo.
+            </div>
+    </div>
+</body>
+</html>
