@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container span{
+            display: block;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        .contain{
+            display: flex;
+        }
+        .contains{
+            display: flex;
+            gap: 10px;
+        }
+        #contains{
+            display: flex;
+            background-color: blanchedalmond;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        #contained{
+            display: flex;
+            background-color: blanchedalmond;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .blak h1{
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- display block,none,flex,inlineflex,inlineblock -->
+     <div class="container">
+        <span>Sekinat</span>
+        <span>Sekinat</span>
+     </div>
+     <div class="contain">
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+     <!-- when using display flex that is when you can use gap align-item,justify-content,flex-direction -->
+     <div class="contains">
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+     <div id="contains">
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+     <div id="contained">
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+     <div class="blak">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+     </div>
+</body>
+</html>

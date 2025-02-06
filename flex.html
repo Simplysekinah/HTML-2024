@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .part{
+            background-color: aqua;
+            width: 500px;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .parts{
+            background-color: yellowgreen;
+            width: 500px;
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .boxs{
+            min-width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="part">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="parts">
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+    </div>
+</body>
+</html>

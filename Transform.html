@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trans{
+            width: 100px;
+            height: 100px;
+            background-color: darkseagreen;
+            transition: all 1s ease-in;
+        }
+        .trans:hover{
+            transform: translate(200px,100px);
+        }
+        .rotat{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            /* border-radius: 50%; */
+            transition: all 1s ease-in;
+        }
+        .rotat:hover{
+            transform: rotate(80deg);
+        }
+        .scal{
+            width: 90px;
+            height: 90px;
+            background-color: chartreuse;
+            transition: all 1s ease-in;
+        }
+        .scal:hover{
+            transform: scale(1.2);
+        }
+        .ske{
+            width: 90px;
+            height: 90px;
+            background-color: purple;
+            transition: all 1s ease-in;
+        }
+        .ske:hover{
+            transform: skew(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="trans"></div>
+    <div class="rotat"></div>
+    <div class="scal"></div>
+    <div class="ske"></div>
+</body>
+</html>
