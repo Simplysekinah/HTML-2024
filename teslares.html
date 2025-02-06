@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .section1 {
+            background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg);
+            height: 500px;
+            background-size: cover;
+            width: 100%;
+            /* background-repeat: no-repeat; */
+            background-position: center;
+        }
+
+        .hold {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            /* margin: 10px; */
+            padding: 10px;
+        }
+
+        #middle {
+            text-align: center;
+        }
+
+        .down {
+            margin: 350px 0 0 0;
+        }
+
+        .clr {
+            color: rgba(255, 255, 255, 0.5);
+            background-color: red;
+        }
+
+        .rgb {
+            background-color: rgb();
+        }
+
+        .rgba {
+            background-color: rgba(100, 200, 255, 0.8);
+        }
+
+        .hex {
+            color: #332255;
+        }
+
+        .btn2 {
+            background-color: #171a20;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        nav div:nth-child(odd) {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav div:nth-child(even) {
+            display: flex;
+            gap: 10px;
+        }
+        img{
+            width: 70px;
+        }
+        .side{
+            display: none;
+        }
+        .dropdown{
+            background-color: white;
+            padding: 10px;
+            position: absolute;
+            width: 60%;
+            top: 0;
+            left: -100%;
+            height: 100vh;
+        }
+        .side:focus-within  .dropdown{
+            left: 0;
+            transition: all 1s ease;
+        }
+
+
+
+
+
+
+
+
+
+        /* media query */
+        @media (max-width: 1013.33px) {
+            nav div:nth-child(odd) {
+                display: none;
+            }
+
+            nav div:nth-child(even) {
+                display: none;
+            }
+            .side{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section1">
+        <nav>
+            <header>
+                <img src="netflix_logo-removebg-preview.png" alt="picture">
+            </header>
+            <div>
+                <div>Vehincle</div>
+                <div>Vehincle</div>
+                <div>Vehincle</div>
+                <div>Vehincle</div>
+                <div>Vehincle</div>
+            </div>
+            <div>
+                <div>icons</div>
+                <div>icons</div>
+                <div>icons</div>
+            </div>
+            <section class="side">
+                <button>Menu</button>
+                <main class="dropdown">
+                    <main>
+                        <main>Vehincle</main>
+                        <main>Vehincle</main>
+                        <main>Vehincle</main>
+                        <main>Vehincle</main>
+                        <main>Vehincle</main>
+                    </main>
+                    <main>
+                        <main>icons</main>
+                        <main>icons</main>
+                        <main>icons</main>
+                    </main>
+                </main>
+            </section>
+        </nav>
+        <main id="middle">
+            <h1>Model 3</h1>
+            <h2>$7,500 Federal Tax Credit Available1</h2>
+            <p>From $33,990 After Est. Savings2</p>
+            <div class="down">
+                <button>Order Now</button>
+                <button class="btn2">Demo Drive</button>
+            </div>
+        </main>
+    </div>
+    <p class="clr">colors</p>
+    red, blue,yellow,rebeccapurple ,e.t.c
+    <p class="rgb">rgb-RED,GREEN AND BLUE</p>
+    <p>rgb(red,green,blue)</p>
+    <p class="rgba">rgba(red,green,blue, opacity) opacity 0-1.0</p>
+    <p class="hex">hex- #rrggbb</p>
+    <p class="hsl">hsl-hue,saturation,lightness - #rrggbb</p>
+</body>
+
+</html>

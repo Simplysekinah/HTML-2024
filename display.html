@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+            align-items: center;
+        }
+        nav button{
+            background-color: red;
+            color: #fff;
+            border-radius: 100%;
+            border: none;
+            padding: 8px 12px;
+        }
+        .underline:hover{
+            text-decoration: underline;
+        }
+        .bg-color{
+            padding: 10px;
+            border-radius: 100%;
+        }
+        .bg-color:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .google-image{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .google-image img{
+            width: 400px;
+        }
+        .inp{
+            /* display: flex; */
+            /* justify-content: center; */
+            border: 1px solid grey;
+            width: fit-content;
+            margin: auto;
+            border-radius: 20px;
+            padding: 7px;
+            /* margin-left: 350px; */
+        }
+        .inp input{
+            border: none;
+            outline: none;
+            width: 400px;
+            height: 30px;
+        }
+        .big-box{
+            display: flex;
+            justify-content: center;
+            /* gap: 60px; */
+            margin-top: 20px;
+        }
+        .small-box{
+            width: 100px;
+            text-align: center;
+            border-radius: 8px;
+            padding-top: 10px;
+            transition: all .2s linear;
+        }
+        .small-box img{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            margin-left: 25px;
+        }
+        .small-box:hover{
+            background-color: lightgrey;
+            /* width: 100px; */
+        }
+        .vert{
+            float: right;
+            /* display: none; */
+            visibility: hidden;
+        }
+        .small-box:hover .vert{
+            /* display: inline; */
+            visibility: visible;
+        }
+        .dropdown{
+            display: none;
+        }
+        .inp:focus-within .dropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <span class="underline">Gmail</span>
+            <span class="underline">Images</span>
+            <span class="material-symbols-outlined bg-color">apps</span>
+            <span>
+                <button>A</button>
+            </span>
+        </nav>
+
+        <div class="google-image">
+            <img src="https://cdn.logojoy.com/wp-content/uploads/20230801145708/google-logo-1999-600x217.png" alt="">
+        </div>
+
+        <div class="inp">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text">
+            <span class="material-symbols-outlined">mic</span>
+            <span class="material-symbols-outlined">photo_camera</span>
+
+            <div class="dropdown">
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>This is the recent search</span>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>This is the recent search</span>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>This is the recent search</span>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>This is the recent search</span>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>This is the recent search</span>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="big-box">
+            <div class="small-box">
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+        </div>
+        <div class="big-box">
+            <div class="small-box">
+                <span class="material-symbols-outlined vert">more_vert</span>
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <span class="material-symbols-outlined vert">more_vert</span>
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <span class="material-symbols-outlined vert">more_vert</span>
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <span class="material-symbols-outlined vert">more_vert</span>
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+            <div class="small-box">
+                <span class="material-symbols-outlined vert">more_vert</span>
+                <img src="https://w7.pngwing.com/pngs/385/181/png-transparent-vw-logo-icon-thumbnail.png" alt="">
+                <p>Spring</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

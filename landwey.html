@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .master{
+            background-color: rgb(243,243,243);
+            padding: 0 50px;
+        }
+        .sub-master{
+            background-color: white;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .image img{
+            width: 200px;
+        }
+        .dropdown{
+            background-color: antiquewhite;
+            width: 250px;
+            padding: 10px;
+            border-top: 3px solid orange;
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        .holder,.holders{
+            position: relative;
+        }
+        .about{
+            padding: 0 10px;
+        }
+        .holder:hover .dropdown, .holders:hover .dropdowns{
+            display: block;
+        }
+        .dropdowns{
+            background-color: antiquewhite;
+            width: 250px;
+            padding: 10px;
+            border-top: 3px solid orange;
+            display: none;
+            position: absolute;
+            right: 235px;
+            top: -12px;
+        }
+        .dropdown p:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="sub-master">
+            <div>
+                <nav>
+                    <div class="image">
+                        <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+                    </div>
+                    <div class="holder">
+                        <div class="about">About</div>
+                        <div class="dropdown">
+                            <div class="holders">
+                                <p>OurWey</p>
+                                <div class="dropdowns">
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                </div>
+                            </div>
+                            <p>WeyTv</p>
+                            <p>Blog</p>
+                            <p>Contact us</p>
+                        </div>
+                    </div>
+                </nav>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

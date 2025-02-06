@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(240, 242, 245);
+            width: 100%;
+        }
+
+        .container {
+            display: flex !important;
+        }
+
+        .section1 {
+            /* background-color: red; */
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section2 {
+            /* background-color: blue; */
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        .first-div p {
+            font-size: 30px;
+            width: 500px;
+
+        }
+
+        form input {
+            display: block;
+            width: 330px;
+            padding: 5px;
+            height: 30px;
+        }
+
+        .second-div {
+
+            background-color: white;
+            width: fit-content;
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+        }
+        .div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        div button:nth-child(odd){
+            width: 330px;
+            background-color: rgb(8,102,255);
+            color: white;
+            border: none;
+        }
+        .div button:last-child{
+            width: 200px;
+            background-color: rgb(66,183,42);
+            color: white;
+            border: 0;
+        }
+        div a{
+            text-decoration: none;
+        }
+        div a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section1">
+            <div class="first-div">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="second-div">
+                <form>
+                    <input type="text" placeholder="Email address or Phone number" />
+                    <input type="password" placeholder="password" />
+                </form>
+                <div class="div">
+                    <button>LOGIN</button>
+                    <a href="">Forget Password?</a>
+                    <hr>
+                    <button onclick="show()">Create Accountr</button>
+                </div>
+            </div>
+            <div>
+                <a href="">Create a Page </a>
+                <span>for a celebrity, brand or business</span>
+            </div>
+            <div>
+                <span>sekinat</span>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+<script>
+    function show(){
+        console.log('hi');
+        alert('How are you')
+    }
+</script>

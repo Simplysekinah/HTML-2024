@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first::first-letter{
+            color: orangered;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .second::first-line{
+            background-color: red;
+            color: white;
+        }
+        .sqi{
+            /* width: 50px; */
+            text-align: center;
+        }
+        .sqi::before{
+            content: url(https://edu.sqi.ng/wp-content/uploads/2019/01/co.jpg);
+            /* width: 50px; */
+        }
+        .sqi::after{
+            content: ' College of ICT';
+        }
+        ::marker{
+            /* content: '+'; */
+            font-size: 50px;
+            color: red;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        ::placeholder{
+            color: red;
+        }
+        .dropdown{
+            background-color: red;
+            color: white;
+            border-top: 3px solid orange;
+            width: 100px;
+            padding: 5px;
+            position: absolute;
+            display: none;
+            transition-property: height;
+            transition: all 2s ease-in 1s;
+            height: 30px;
+        }
+        .parent{
+            position: relative;
+        }
+        .parent:hover .dropdown{
+            display: block;
+            height: 150px;
+            background-color: green;
+        }
+        .show{
+            /* background-color: red; */
+            width: 200px;
+            height: 200px;
+            transition-delay: 2s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-property: width, background-color;
+        }
+        .show:hover{
+            background-color: orange;
+        }
+        .showing{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            transition: all 1s ease 2s;
+        }
+        .showing:hover{
+            transform: translateX(100px);
+        }
+        .showing1{
+            background-color: aquamarine;
+            width: 80px;
+            height: 80px;
+            transition: all 1s ease 2s;
+        }
+        .showing1:hover{
+            transform: rotate(50deg);
+        }
+        .showing2{
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 50px brown ;
+            transition: all 1s ease 2s;
+        }
+        .showing2:hover{
+            transform: scale(0.5);
+        }
+        .showing3{
+            background-color: palevioletred;
+            width: 300px;
+            height: 400px;
+            transition: all 1s ease 2s;
+        }
+        .showing3:hover{
+            transform: skew(40deg, 50deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- @psuedo elemeent -->
+     <div>
+        <p class="first">The lord is my shepherd i shall not want he made me to lie down</p>
+        <div class="second">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div class="sqi">Sqi</div>
+        <ul>
+            <li>inioluwa</li>
+            <li>valentine</li>
+            <li>barakat</li>
+            <li>muhammed</li>
+        </ul>
+        <input type="text" placeholder="Fullname">
+        <div class="parent">
+            <div>Portal</div>
+            <div class="dropdown">
+                <p>Student</p>
+                <p>Staff</p>
+            </div>
+        </div>
+        <div class="show"></div>
+        <div class="showing"></div>
+        <div class="showing1"></div>
+        <div class="showing2"></div>
+        <div class="showing3"></div>
+     </div>
+</body>
+</html>

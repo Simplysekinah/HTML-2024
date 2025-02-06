@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animate{
+            width: 500px;
+            height: 500px;
+            background-color: orangered;
+            border-radius: 20px 40px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.639);
+            animation-name: move;
+            animation-delay: 3s;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes move {
+            10%{
+                background: linear-gradient(orange, lightgrey);
+                margin: auto;
+                border-radius: 50px 100px;
+            }
+            20%{
+                background: linear-gradient(orange, lightgrey);
+                margin: 100px;
+                border-radius: 40px 50px;
+                transform: skew(40deg, 50deg);
+                width: 400px;
+            }
+            30%{
+                background: linear-gradient(red, lightgrey);
+                margin: auto;
+                border-radius: 20px 150px;
+            }
+            40%{
+                background: linear-gradient(rebeccapurple, lightgrey);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px 100px;
+            }
+            50%{
+                background: linear-gradient(purple, lightgrey);
+                margin: 500px;
+                border-radius: 50px 100px;
+            }
+            60%{
+                background: linear-gradient(orange, lightgrey);
+                margin: auto;
+                border-radius: 50px 100px;
+                transform: scale(1.5);
+            }
+            70%{
+                background: linear-gradient(orange, rgb(211, 211, 211));
+                margin: auto;
+                border-radius: 10px 100px;
+                transform: rotate3d(40deg);
+            }
+            80%{
+                background: linear-gradient(green, olive);
+                margin: auto;
+                border-radius: 100px 100px;
+                transform: translate(100px, 50px);
+            }
+            90%{
+                background: linear-gradient(pink, plum);
+                margin: auto;
+                border-radius: 50px 100px;
+                transform: rotate(40deg);
+            }
+            10%{
+                background: linear-gradient(plum, palevioletred);
+                margin: 80px;
+                border-radius: 50px 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animate"></div>
+</body>
+</html>
