@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            /* animation-name: move; */
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+        }
+        @keyframes move {
+            /* to{
+                transform: translate(200px,100px);
+                margin: auto;
+                border-radius: 40px 30px;
+            }
+            from{
+                transform: rotate(200deg);
+                margin: auto;
+                border-radius: 40px 30px;
+                background: linear-gradient(red,gold);
+            } */
+            0%{
+                transform: translate(200px,100px);
+                margin: auto;
+                border-radius: 40px 30px;
+            }
+            60%{
+                transform: scale(1.3);
+                margin: auto;
+                border-radius: 50px;
+            }
+            100%{
+                transform: rotate(200deg);
+                margin: auto;
+                border-radius: 40px 30px;
+                background: linear-gradient(red,gold);
+            }
+        }
+        .hold{
+            display: flex;
+            gap: 3px;
+        }
+        .hold div:nth-child(1){
+            background-color: brown;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: load 1s ease-out 1s infinite;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .hold div:nth-child(2){
+            background-color: peru;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: loads 1s ease-out 5s infinite;
+        }
+        .hold div:nth-child(3){
+            background-color: yellow;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: loades 1s ease-out 7s infinite;
+        }
+        @keyframes load {
+            0%{
+                transform: scale(0.8);
+                opacity: 1;
+                visibility: visible;
+            }
+            70%{
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+        @keyframes loads {
+            0%{
+                transform: scale(0.8);
+                opacity: 0;
+                /* transition-delay: 3s; */
+            }
+            100%{
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+        @keyframes loades {
+            0%{
+                transform: scale(0.8);
+                opacity: 0;
+                /* transition-delay: 5s; */
+            }
+            100%{
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="hold">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
