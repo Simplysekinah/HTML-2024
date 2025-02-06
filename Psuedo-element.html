@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first::first-letter{
+            color: brown;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .holder::first-line{
+            background-color: burlywood;
+            color: white;
+            font-size: 25px;
+        }
+        ::marker{
+            font-size: 30px;
+            color: red;
+        }
+        input::placeholder{
+            color: aquamarine;
+        }
+        .name::before{
+            content: 'Akinola ';
+        }
+        .name::after{
+            content: ' Folashade';
+        }
+        .img::before{
+            content: url();
+        }
+    </style>
+</head>
+<body>
+    <!-- psuedo element is used to change a part of an element. we differntiate psuedo element with double colon -->
+    <!-- e.g first-letter,first-line,placeholder,marker,webkit-scrollbar, webkit-scroll-thumb,before,after -->
+    <div class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="holder">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+    </div>
+    <ul>
+        <li>Okiki</li>
+        <li>Okiki</li>
+    </ul>
+    <input type="text" placeholder="Email-address">
+    <div class="name">sekinat</div>
+    <div class="img">image</div>
+</body>
+</html>

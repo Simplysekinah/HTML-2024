@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+        }
+        .parent{
+            position: relative;
+        }
+        .dropdown{
+            background-color: aquamarine;
+            color: white;
+            display: none;
+            position: absolute;
+            top: 5px;
+        }
+        .parent:hover .dropdown{
+            display: block;
+        }
+        .fixed{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .stick{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+        .circle{
+            background-color: chartreuse;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .show{
+            background-color: black;
+            border-radius: 5px;
+            height: 400px;
+            width: 300px;
+            display: none;
+        }
+        button:focus .show{
+            display: block;
+        }
+        .hover{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            transition: all 1s linear 1s;
+            /* display: none; */
+            visibility: hidden;
+        }
+        button:hover .hover{
+            /* display: block; */
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <div class="stick"></div>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+    <div class="parent">
+        <div>About</div>
+        <div class="dropdown">
+            <p>chocolate</p>
+            <p>chocolate</p>
+            <p>chocolate</p>
+            <p>chocolate</p>
+        </div>
+    </div>
+    <div class="fixed"></div>
+
+    <button>
+        <div class="circle"></div>
+        <div class="hover">GoogleApps</div>
+        <div class="show"></div>
+    </button>
+</body>
+</html>

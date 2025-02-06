@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81f35a7969.js" crossorigin="anonymous"></script>
+    <style>
+        main{
+            /* display: flex; */
+        }
+        main h1{
+            display: inline-flex;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+        .control{
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+        }
+        .boxs{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            align-self: baseline;
+        }
+        .controls{
+            display: flex;
+            background-color: blanchedalmond;
+            height: 500px;
+            align-items: end;
+            justify-content: center;
+        }
+        .middle{
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: column;
+            align-items: center;
+        }
+        section nav{
+            background-color: red;
+            height: 70px;
+        }
+        section header{
+            background-color: black;
+            height: 50px;
+        }
+        section .main{
+            display: flex;
+            width: 100%;
+        }
+        .one{
+            background-color: pink;
+            height: 300px;
+            width: 25%;
+        }
+        .two{
+            background-color: coral;
+            height: 300px;
+            width: 50%;
+        }
+        .three{
+            background-color: cornflowerblue;
+            width: 25%;
+            height: 300px;
+        }
+        ul li{
+            display: inline;
+        }
+        .block span{
+            display: block;
+        }
+        .non{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+        .none:hover .non{
+            display: block;
+        }
+        .nons{
+            background-color: palegreen;
+            width: 200px;
+            height: 200px;
+            visibility: hidden;
+        }
+        .nones:hover .nons{
+            visibility: visible;
+        }
+        a:visited{
+            color: red;
+        }
+        /* button:focus{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        } */
+         button{
+            background-color: transparent;
+            border: none;
+         }
+         .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: chocolate;
+            width: 400px;
+         }
+         .bottom{
+            background-color: brown;
+            display: none;
+            width: 400px;
+         }
+         button:focus .bottom{
+            display: block;
+         }
+         .inp{
+            display: none;
+         }
+         .input:focus-within .inp{
+            display: block;
+         }
+         .trans{
+            background-color: chartreuse;
+            width: 200px;
+            height: 200px;
+            /* transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+            transition-property: all; */
+            transition: all 1s linear 2s;
+         }
+         .trans:hover{
+            background-color: cornflowerblue;
+            border-radius: 100%;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Lorem, ipsum.</h1>
+    </main>
+    <div class="control">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="controls">
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+    </div>
+    <div class="middle">
+        <h1>How are you</h1>
+        <p>Watch movie today and pray</p>
+        <p>Enjoy yourself and have a nice rest</p>
+    </div>
+    <div style="display: flex;">
+        <div>home</div>
+        <i class="fa-solid fa-house"></i>
+        <div></div>
+    </div>
+    <section>
+        <nav></nav>
+        <header></header>
+        <div class="main">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </section>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+    <div class="block">
+        <span>Lorem, ipsum.</span>
+        <span>Lorem, ipsum.</span>
+        <span>Lorem, ipsum.</span>
+    </div>
+    <div class="none">
+        <p>show me the box</p>
+        <div class="non"></div>
+    </div>
+    <!-- display-none is to disappear -->
+     <!-- visibility leave the space of the element but won't show until you tell it to show -->
+     <div class="nones">
+        <p>show me the box</p>
+        <div class="nons"></div>
+    </div>
+    <a href="">this is the link</a>
+    <button>
+        <div class="top">
+            <p>What is Netflix?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="bottom">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque nesciunt ipsam quod perspiciatis eos obcaecati, ab provident inventore ducimus numquam commodi. Eius ullam doloribus ratione earum enim aspernatur nesciunt.</div>
+        </div>
+    </button>
+    <div class="input">
+        <input type="text">
+        <div class="inp">
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+        </div>
+    </div>
+    <div class="trans"></div>
+</body>
+</html>
