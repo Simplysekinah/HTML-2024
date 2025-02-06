@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    background-color: whitesmoke;
+    height: 500px;
+}
+nav{
+    display: flex;
+    background-color: white;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-img img{
+    width: 60px;
+}
+.first-div{
+    display: flex;
+    gap: 6px;
+}
+.input{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    padding: 6px;
+    gap: 4px;
+    border-radius: 5px;
+}
+.input input{
+    border: none;
+    width: 500px;
+    outline: none;
+    padding: 4px;
+    font-size: 16px;
+}
+#search{
+    font-size: 25px;
+}
+.second-div{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.second-div a{
+    text-decoration: none;
+    color: black;
+}
+.second-div a:nth-child(even){
+    /* background-color: rgba(0, 106, 255, 0.612); */
+    border: 1px solid #4e5be2;
+    padding: 12px;
+    border-radius: 5px;
+}
+.second-div a:nth-child(odd){
+    padding: 10px;
+}
+.second-div a:nth-child(even):hover{
+    background-color: #4e5be2;
+    color: white;
+}
+.second-div a:nth-child(odd):hover{
+    background-color: #4e5ae284;
+    color: #4e5be2;
+    text-decoration: underline;
+    width: fit-content;
+    border-radius: 5px;
+}
+.box{
+    background-color: #4e5be2;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    /* box-shadow: 10px 10px 10px red, 10px 10px 10px red, -10px -10px 10px red, -10px -10px 10px red; */
+    box-shadow: 10px -10px 10px -10px  red;
+}
+.box:hover{
+    background-color: red;
+}
+.boxs{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.boxs:active{
+    background-color: aquamarine;
+}
+button:focus{
+    text-decoration: underline;
+}
+.show{
+    display: none;
+}
+.container:focus-within .show{
+    display: block;
+}
