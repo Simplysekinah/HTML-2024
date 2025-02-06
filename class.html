@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Poppins";
+        }
+        .hov{
+            background-color: red;
+            color: white;
+        }
+        .hov:hover{
+            background-color: blue;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            transition-delay: 1s;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-property: background-color;
+        }
+        .box:hover{
+            background-color: blue;
+        }
+        button:focus{
+            background-color: red;
+            color: white;
+        }
+        .act:active{
+            background-color: green;
+        }
+        .drop{
+            display: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .parent:focus-within .drop{
+            display: block;
+        }
+        .sek::before{
+            content: 'Akinola ';
+        }
+        .sek::after{
+            content: 'Folashade';
+        }
+        ::placeholder{
+            color: red;
+        }
+        ::marker{
+            font-size: 20px;
+            color: brown;
+        }
+        .lor::first-line{
+            background-color: red;
+            color: whitesmoke;
+        }
+        .lor::first-letter{
+            font-size: 30px;
+            color: darkorange;
+        }
+        .big-div{
+            background-color: red;
+            width: 400px;
+            display: flex;
+            gap: 5px;
+            overflow-x: scroll;
+        }
+        .boxs{
+            min-width: 100px;
+            height: 100px;
+            background-color: brown;
+            /* width: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Psuedo class</h1>
+        <div class="hov">Hover</div>
+        <div class="box"></div>
+        <!-- focus -->
+         <button>click me</button>
+         <!-- active -->
+        <div class="act">sekinat</div>
+        <!-- focus-within -->
+        <div class="parent">
+            <input type="text">
+            <div class="drop">
+                <p>show</p>
+                <p>show</p>
+                <p>show</p>
+                <p>show</p>
+            </div>
+        </div>
+        <!-- psuedo element -->
+         <div class="sek">Sekinat</div>
+         <input type="text" placeholder="Email Address">
+         <ul>
+            <li>maker</li>
+            <li>maker</li>
+            <li>maker</li>
+            <li>maker</li>
+         </ul>
+         <div class="lor">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio est non vero magni ea! Eligendi assumenda dolorum debitis sequi ipsam tempore vel animi? Velit provident ad at explicabo incidunt id!
+         Officia itaque earum quos quia quam voluptates corporis fuga suscipit qui voluptatibus iure, porro esse hic distinctio voluptatem culpa reprehenderit exercitationem ullam modi dignissimos error eveniet provident! Molestias, impedit modi?
+         Reiciendis asperiores eum amet ipsum laboriosam quaerat adipisci illum aliquid dolore ipsam debitis voluptate, repellat dolores at accusantium necessitatibus alias earum maiores eaque ducimus! Explicabo sequi non sint quae laborum?
+         Natus alias consequuntur cumque facere architecto officia explicabo quod accusantium provident minus exercitationem modi eveniet dignissimos eos maxime quae aliquid nesciunt, unde porro illum? Repudiandae saepe tenetur temporibus tempore cum?</div>
+
+         <div class="big-div">
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+         </div>
+    </div>
+</body>
+</html>

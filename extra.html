@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent,.parents{
+            display: flex;
+            width: 250px;
+            background-color: aquamarine;
+            overflow: auto;
+        }
+        .box,.boxs{
+            background-color: red;
+            min-width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        .parent::-webkit-scrollbar-thumb{
+            background-color: red;
+            width: 10px;
+            border-radius: 10px;
+
+        }
+        .parent::-webkit-scrollbar{
+            background-color: green;
+        }
+        .parents::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Overflow -->
+        <div class="parent">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="parents">
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+        </div>
+    </div>
+</body>
+</html>

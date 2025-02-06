@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    background-color: coral;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-left{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.nav-left img{
+    width: 150px;
+}
+.nav-left div{
+    color: #aad586;
+}
+.dropone-div{
+    display: flex;
+    gap: 8px;
+}
+.dropone-drop{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 35px;
+    width: 250px;
+    border-radius: 10px;
+    height: 280px;
+    padding: 20px;
+    display: none;
+}
+.dropone-drop div{
+    margin: 10px 0 0 0 ;
+}
+.dropone-drop div:hover{
+    color: #aad586;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown:hover .dropone-drop{
+    display: block;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    /* display: none; */
+}
+.second-drop{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.dropdown1{
+    position: relative;
+}
+.dropdown1:hover .dropone-drop{
+    /* display: block; */
+}
+.dropones-div{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+.dropones-drop{
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    /* width: 250px; */
+    border-radius: 10px;
+    /* height: 280px; */
+    /* padding: 20px; */
+    display: none;
+}
+.dropones-drop div{
+    margin: 10px 0 0 0 ;
+}
+.dropones-drop div:hover{
+    color: #aad586;
+}
+.drop-btn{
+    background-color: transparent;
+    border: none;
+    /* padding: 0; */
+}
+.dropdown1:focus-within .dropones-drop{
+    display: block;
+}
+#bars{
+    /* display: none; */
+}
+.dropup{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 25px;
+    height: 100vh;
+    /* display: none; */
+    position: fixed;
+    top: -100%;
+    right: 0;
+}
+.second-drop:focus-within .dropup{
+    display: block;
+    top: 0;
+    /* z-index: 10; */
+    transition: all 2s linear;
+}
+
+.section-one{
+    background-color: red;
+    height: 500px;
+    text-align: center;
+}
+.section-one h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+body{
+    width: 100%;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.spread, .spreads{
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    width: 180px;
+    padding: 15px;
+    position: relative;
+    left: 0;
+    z-index: 0;
+}
+.spread::before, .spreads::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.spread:hover, .spreads:hover{
+    /* left: 0; */
+    color: white;
+}
+.spread:hover::before, .spreads:hover::before{
+    width: 100%;
+    transition: all 0.5s;
+}
+.center-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: #aad586;
+    height: 400px;
+}
+.div-hold{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 15px 0 0 0;
+}
+.hold{
+    background-color: chocolate;
+    width: 250px;
+    height: 300px;
+    border: 2px solid gray;
+}
+.section-two{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div-left img{
+    width: 500px;
+}
+.div-right p:nth-child(even){
+    background-color: pink;
+    width: 380px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media (max-width: 1029.33px) {
+    nav{
+        padding: 20px 5px;
+    }
+}
+
+@media (max-width: 1023.33px) {
+    .nav-right{
+        display: none;
+    }
+    .second-drop{
+        display: block;
+    }
+    .hold{
+        width: 40%;
+    }
+}
+@media (max-width: 402px) {
+    .center{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+.hold{
+    width: 80%;
+}
+}
