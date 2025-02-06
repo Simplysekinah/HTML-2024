@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .let::first-letter{
+            font-size: 35px;
+            font-weight: 900;
+            color: indianred;
+        }
+        .lin::first-line{
+            background-color: pink;
+            color: white;
+            font-size: 15px;
+        }
+        ::placeholder{
+            color: royalblue;
+        }
+        ::marker{
+            color: red;
+        }
+        .name::before{
+            content: 'SQI ';
+        }
+        .name::after{
+            content: ' ICT';
+        }
+    </style>
+</head>
+<body>
+    <div class="let">Thou</div>
+    <div class="lin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, adipisci est nemo officiis, voluptates excepturi laudantium ex voluptate impedit dicta dolor fugiat corrupti sit iste error, ipsa magni odit doloremque?</div>
+    <input type="text" placeholder="Email-Address">
+    <ul>
+        <li>List</li>
+        <li>List</li>
+        <li>List</li>
+    </ul>
+    <div class="name">College</div>
+</body>
+</html>
