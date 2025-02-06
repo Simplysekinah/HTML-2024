@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trans{
+            width: 200px;
+            height: 200px;
+            background-color: darkolivegreen;
+            transition: all 1s linear;
+        }
+        .trans:hover{
+            transform: translate(100px, 200px);
+        }
+        .rotat{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            transition: all 1s linear;
+        }
+        .rotat:hover{
+            transform: rotate(-200deg);
+            background-color: blue;
+        }
+        .scal{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transition: all 1s linear;
+        }
+        .scal:hover{
+            transform: scale(0.5);
+        }
+        .ske{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            transition: all 1s linear;
+        }
+        .ske:hover{
+            transform: skew(100deg, 200deg);
+        }
+        .over{
+            background-color: blanchedalmond;
+            width: 500px;
+            display: flex;
+            overflow: auto;
+            gap: 10px;
+        }
+        .floe{
+            background-color: olive;
+            min-width: 50px;
+            height: 50px;
+        }
+        .over::-webkit-scrollbar{
+            /* width: 10px; */
+            background-color: transparent;
+            /* border-radius: 10px; */
+        }
+        .over::-webkit-scrollbar-thumb{
+            /* width: 4px; */
+            /* height: 10px; */
+            background-color: orange;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transform is used to change the position of an element. It can be used to move,rotate,zoom and slat and element -->
+     <div class="trans"></div>
+     <div class="rotat"></div>
+     <div class="scal"></div>
+     <div class="ske"></div>
+     <div class="over">
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+        <div class="floe"></div>
+     </div>
+</body>
+</html>
