@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overflow{
+            display: flex;
+            /* overflow: auto; */
+            overflow-x: scroll;
+            gap: 8px;
+        }
+        .overflow::-webkit-scrollbar{
+            display: none;
+        }
+        .small{
+            min-width: 150px;
+            height: 150px;
+            background-color: tomato;
+            margin: 10px;
+        }
+        .big{
+            width: 550px;
+            height: 300px;
+            background-color: grey;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow-y: scroll;
+        }
+        .big::-webkit-scrollbar{
+            /* background-color: fuchsia; */
+            width: 8px;
+        }
+        .big::-webkit-scrollbar-thumb{
+            background-color: black;
+            width: 7px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="overflow">
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+            <button>Daniel</button>
+        </div>
+
+        <div class="big">
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+    </main>
+</body>
+</html>

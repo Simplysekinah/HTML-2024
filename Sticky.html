@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stick{
+            border: 2px solid fuchsia;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            position: -webkit-sticky;
+        }
+        .first::first-letter{
+            color: brown;
+            font-size: 30px;
+        }
+        .line::first-line{
+            background-color: brown;
+            color: white;
+        }
+        ::marker{
+            color: red;
+            font-size: 30px;
+        }
+        /* ::-webkit-scrollbar{
+            display: none;
+        } */
+        .sqi::before{
+            /* content: url(../../Downloads/DecodeLogo.png); */
+            content: "Html/Css ";
+        }
+        .sqi::after{
+            /* content: url(../../Downloads/DecodeLogo.png); */
+            content: " Html/Css";
+        }
+        #input{
+            width: 500px;
+        }
+        #input1,#input2{
+            padding: 10px;
+            color: white;
+            background-color: rgba(139, 0, 139, 0.404);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        .input1{
+            padding: 10px;
+            color: white;
+            background-color: rgba(139, 0, 139, 0.404);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        .input{
+            width: 500px;
+        }
+        #input1::placeholder,#input2::placeholder{
+            color: fuchsia;
+        }
+        .size{
+            width: 200px;
+            height: 200px;
+            /* border: 2px; */
+        }
+        .holder{
+            border: 3px groove orangered;
+        }
+        .one{
+            background-color: blue;
+        }
+        .two{
+            background-color: tomato;
+        }
+        .three{
+            background-color: powderblue;
+        }
+        .four{
+            background-color: rebeccapurple;
+        }
+        .hold{
+            border: 1px solid black;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1 class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1 class="stick">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus.</h1>
+        <h2 class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas, laudantium doloremque, sunt, cum quisquam assumenda praesentium provident sapiente blanditiis culpa et voluptatum sed error minus ipsum doloribus laboriosam! Sint.
+        Tenetur at culpa suscipit maiores? Exercitationem obcaecati reiciendis nihil nisi, dicta cum in dignissimos dolorem vero modi enim qui maiores vel sit. Corporis, culpa maxime! Corporis tenetur saepe iure quisquam?
+        Qui ducimus ut hic dolores cupiditate, officiis aspernatur perferendis eum soluta cum. Totam reiciendis velit dicta possimus voluptate placeat pariatur officiis assumenda ipsam. Delectus dicta vel accusantium aliquam dignissimos. Accusamus.
+        Tempora cumque vel error minus, distinctio itaque aperiam ipsa voluptate molestias commodi pariatur blanditiis temporibus mollitia! Ab repellendus, in a molestias necessitatibus incidunt id, laborum, cumque repudiandae nemo tempore architecto!
+        Tempora eius iste ex corporis impedit. Laborum dolores itaque consequatur nisi, harum perferendis dolorum? Accusamus magnam odit eveniet iste quaerat in sed sequi, quidem, harum dolorum animi enim nemo accusantium.
+        Assumenda autem nostrum molestiae possimus consectetur delectus eaque quia tenetur, accusantium, suscipit quos praesentium recusandae nisi quae, voluptatum qui ut quidem! Pariatur ab porro atque ullam obcaecati necessitatibus dolorum itaque.
+        Delectus magnam animi optio modi officiis, illum quibusdam? Consequatur, nam deserunt. Hic quidem rem inventore obcaecati eius harum ab commodi repellat illum at distinctio voluptas nesciunt sit, fugit itaque dolor?
+        Enim quis aliquam nihil! Neque consectetur deserunt animi velit tempora eos voluptates ipsam iste ducimus magnam, eligendi enim laudantium consequuntur vitae mollitia repudiandae, deleniti eaque ad minus aperiam. Sapiente, provident.
+        Ex, fuga sint voluptatem modi dolorem consequuntur voluptatum dolor voluptas expedita eum, vel explicabo velit? Illum, mollitia. Quae officia cum nobis dolorum saepe nemo dolor aspernatur, qui esse impedit maxime.
+        Nisi minus asperiores quos sit expedita. Sed minima ipsa dolorum eveniet, at laboriosam fuga consequatur nemo, esse officia possimus fugiat veniam quibusdam sequi ab sit dignissimos mollitia perspiciatis, iure repudiandae.</h2>
+        <ul>
+            <li>show</li>
+            <li>show</li>
+            <li>show</li>
+            <li>show</li>
+            <li>show</li>
+            <li>show</li>
+        </ul>
+        <div class="hold">
+            <img src="../../Downloads/DecodeLogo.png" alt="">
+            <p>SQI</p>
+        </div>
+        <h1 class="sqi">sqi</h1>
+        <input id="input1 input" type="text" placeholder="Email address">
+        <input class="input1 input" type="text" placeholder="Email address">
+        <input id="input2" type="text" placeholder="Email address">
+        <input class="input1" type="text" placeholder="Email address">
+        <input class="input1" type="text" placeholder="Email address">
+        <input class="input1" type="text" placeholder="Email address">
+        <input class="input1" type="text" placeholder="Email address">
+        <div class="holder">
+            <div class="size one"></div>
+            <div class="size two"></div>
+            <div class="size three"></div>
+            <div class="size four"></div>
+        </div>
+    </section>
+</body>
+</html>

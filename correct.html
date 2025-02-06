@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
+            /* text-align: end; */
+        }
+        nav .account{
+            /* margin-right: 10px; */
+            background-color: red;
+            border-radius: 100%;
+            padding: 4px 8px;
+            font-size: 19px;
+            color: #fff;
+        }
+        .logo{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logo img{
+            width: 300px;
+        }
+        .inp{
+            width: fit-content;
+            margin: auto;
+            border: 1px solid lightgrey;
+            padding: 4px 10px;
+            border-radius: 20px;
+            position: relative;
+            background-color: #fff;
+        }
+        .inp input{
+            width: 500px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .big{
+            display: flex;
+            width: 600px;
+            margin: auto;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .small{
+            min-width: 120px;
+            text-align: center;
+            position: relative;
+        }
+        .small img{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+            background-color: grey;
+        }
+        .small:hover{
+            /* background-color: lightgrey;
+            opacity: 0.3; */
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+        }
+        .more{
+            text-align: end;
+        }
+        .more span{
+            /* display: none; */
+            /* visibility: hidden; */
+            opacity: 0;
+            transition: all 0.5s linear;
+        }
+        .small:hover span{
+            /* display: block; */
+            /* visibility: visible; */
+            opacity: 1;
+        }
+        .dropdown{
+            display: none;
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            right: 0;
+            z-index: 1;
+            border-radius: 0 0 20px 20px;
+        }
+        .dropdown button{
+            float: right;
+        }
+        .inp:focus-within{
+            border-radius: 20px 20px 0 0;
+        }
+        .inp:focus-within .dropdown{
+            display: block;
+        }
+        .edit_shortcut{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: grey;
+            text-align: center;
+            border-radius: 5px;
+            display: none;
+            padding: 10px 0;
+        }
+        .more:focus-within .edit_shortcut{
+            display: block;
+        }
+        .edit_shortcut p{
+            padding: 10px 0;
+        }
+        .edit_shortcut p:hover{
+            background-color: lightgrey;
+        }
+        .a_dropdown{
+            background-color: grey;
+            color: #fff;
+            width: 400px;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            padding: 10px 17px;
+            display: none;
+            border-radius: 18px;
+        }
+        .times{
+            float:  right;
+        }
+        .emailDiv{
+            text-align: center;
+        }
+        .letterA{
+            background-color: powderblue;
+            width: fit-content;
+            padding: 30px 35px;
+            border-radius: 100%;
+            margin: auto;
+            margin-top: 15px;
+            position: relative;
+        }
+        .letterA strong{
+            font-size: 30px;
+        }
+        .pen{
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            background-color: black;
+            padding: 5px;
+            border-radius: 100%;
+        }
+        .avatar{
+            text-align: center;
+        }
+        .manage{
+            text-align: center;
+            margin: 12px 0;
+        }
+        .manage button{
+            padding: 10px 18px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: powderblue;
+            font-size: 16px;
+            font-weight: 550;
+        }
+        .two_buttons{
+            display: flex;
+        }
+        .two_buttons button{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            margin: 2px;
+            padding: 10px 0;
+            background-color: rgb(52, 44, 44);
+            color: #fff;
+        }
+        /* .two_buttons button:nth-child(1){
+            border-radius: 20px 4px 4px 20px;
+        }
+        .two_buttons button:nth-child(2){
+            border-radius: 4px 20px 20px 4px;
+        } */
+        .btn1{
+            border-radius: 20px 4px 4px 20px;
+        }
+        .btn2{
+            border-radius: 4px 20px 20px 4px;
+        }
+        .terms{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .terms p{
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .terms p:hover{
+            background-color: lightgrey;
+        }
+        .account_span:focus-within .a_dropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <span>Gmail</span>
+            <span>Images</span>
+            <span class="material-symbols-outlined">apps</span>
+            <span class="account_span">
+                <button class="account">A</button>
+                <div class="a_dropdown">
+                    <div class="emailDiv">
+                        <span>youremail$gmail.com</span>
+                        <button class="times">&times;</button>
+                    </div>
+                    <div class="avatar">
+                        <div class="letterA">
+                            <strong>A</strong>
+                            <span class="material-symbols-outlined pen">edit</span>
+                        </div>
+                        <h1>Hi, Daniel</h1>
+                    </div>
+                    <div class="manage">
+                        <button>Manage your google account</button>
+                    </div>
+                    <div class="two_buttons">
+                        <button class="btn1">
+                            <span class="material-symbols-outlined">add</span>
+                            <strong>Add account</strong>
+                        </button>
+                        <button class="btn2">
+                            <span class="material-symbols-outlined">logout</span>
+                            <strong>Sign out</strong>
+                        </button>
+                    </div>
+
+                    <div class="terms">
+                        <p>Privacy Policy</p>
+                        <span>.</span>
+                        <p>Terms of service</p>
+                    </div>
+                </div>
+            </span>
+        </nav>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" alt="">
+        </div>
+        <div class="inp">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text">
+            <span class="material-symbols-outlined">mic</span>
+            <span class="material-symbols-outlined">photo_camera</span>
+            <div class="dropdown">
+                <p>
+                    <span class="material-symbols-outlined">history</span>
+                    <strong>Your recent search</strong>
+                    <button>&times;</button>
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">history</span>
+                    <strong>Your recent search</strong>
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">history</span>
+                    <strong>Your recent search</strong>
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">history</span>
+                    <strong>Your recent search</strong>
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">history</span>
+                    <strong>Your recent search</strong>
+                </p>
+            </div>
+        </div>
+        <div class="big">
+            <div class="small">
+                <div class="more">
+                    <button class="material-symbols-outlined"> more_vert</button>
+                    <div class="edit_shortcut">
+                        <p>Edit Shortcut</p>
+                        <p>Remove</p>
+                    </div>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <div class="more">
+                    <span class="material-symbols-outlined"> more_vert</span>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <div class="more">
+                    <span class="material-symbols-outlined"> more_vert</span>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <div class="more">
+                    <span class="material-symbols-outlined"> more_vert</span>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+            <div class="small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBfilk4R88lFQVC5RBi9RLD51xEDD55eosWYs5u8H59_QB_8MXUrz97O-1hYSItV0mYs&usqp=CAU" alt="">
+                <p>Google</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

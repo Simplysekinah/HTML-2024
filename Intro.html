@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #copy:hover {
+            font-size: 30px;
+            background-color: red;
+            color: white;
+            width: 200px;
+            border-radius: 10px;
+        }
+        .copy:focus {
+            color: red;
+        }
+        .left:active {
+            text-decoration: underline;
+        }
+        .accord {
+            color: white;
+            background-color: gray;
+            border: 0;
+            width: 500px;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .show {
+            text-align: start;
+        }
+            .showing{
+                background-color: gray;
+                width: 500px;
+                display: none;
+                margin: -15px 0 0 0;
+            }
+            main:focus-within .showing{
+                display: block;
+            }
+            #close{
+                display: none;
+            }
+            main:focus-within #add{
+                display: none;
+            }
+            main:focus-within #close{
+                display: block;
+            }
+            #close:focus-within .showing{
+                display: none;
+            }
+            .hov:hover{
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+            }
+            .act:active{
+                color: red;
+            }
+            .btn:focus{
+                color: pink;
+            }
+            .show1{
+                display: flex;
+                width: 300px;
+                justify-content: space-between;
+            }
+            .show2{
+                display: none;
+            }
+            .main-div:focus-within .show2{
+                display: block;
+            }
+            .main{
+                width: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            #main{
+                background-color: red;
+                width: 500px;
+                margin: 3px 0 0 0;
+                display: none;
+            }
+            .section1:focus-within #main{
+                display: block;
+            }
+            .section1:focus-within #add{
+                display: none;
+            }
+            .section1:focus-within #closes{
+                display: block;
+            }
+            #closes{
+                display: none;
+            }
+            .holder{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .copy{
+                display: flex;
+                background-color: aqua;
+                gap: 5px;
+                width: 150px;
+                flex-wrap: wrap;
+            }
+            .lazy{
+                /* background-color: brown; */
+                /* color: white; */
+                width: 500px;
+                display: flex;
+                overflow: auto;
+                gap: 10px;
+            }
+            .sub-lazy{
+                background-color: red;
+                width: 240px;
+            }
+            .ours{
+                margin: auto;
+            }
+            .our,.whos{
+                display: none;
+            }
+            .ours:hover .our{
+                display: block;
+            }
+            .who:hover .whos{
+                display: block;
+                margin: 0 0 0 -50px;
+                /* left: 0; */
+            }
+            .over{
+                width: 500px;
+                background-color: blue;
+                height: 500px;
+                display: flex;
+                gap: 10px;
+                overflow: auto;
+            }
+            .small,.smalls{
+                min-width: 150px;
+                height: 150px;
+                background-color: red;
+            }
+            .over::-webkit-scrollbar{
+                /* background-color: yellow; */
+                width: 5px;
+            }
+            .over::-webkit-scrollbar-thumb{
+                background-color: red;
+                border-radius: 10px;
+                width: 5px;
+            }
+            .overs{
+                width: 500px;
+                background-color: green;
+                height: 500px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                /* overflow-y: scroll; */
+                /* overflow: auto; */
+                overflow: scroll;
+            }
+            h1{
+                background-color: peru;
+                display: inline-block;
+            }
+            .h1{
+                /* display: flex; */
+            }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p style="color: white; background-color: coral; width: 200px; font-size: 25px; font-weight: 900;">sekinat</p>
+        <p>sekinat</p>
+        <div>sekinat</div>
+        <div>sekinat</div>
+        <span>sekinat</span>
+        <span>sekinat</span>
+        <b>sekinat</b>
+        <b>sekinat</b>
+        <i>sekinat</i>
+        <i>sekinat</i>
+        <header>sekinat</header>
+        <header>sekinat</header>
+        <main>sekinat</main>
+        <main>sekinat</main>
+        <strong>sekinat</strong>
+        <strong>sekinat</strong>
+        <button>sekinat</button>
+        <button>sekinat</button>
+        <small>sekinat</small>
+        <!-- Psuedo class -->
+        <div class="hov">Sqi</div>
+        <div class="act">Sqi</div>
+        <button class="btn">Sqi</button>
+        <div class="main-div">
+            <button class="show1">
+                <p>Sekinat</p>
+                <p>add</p>
+            </button>
+            <div class="show2">
+                <p>WESRTDYTYKULK.B,VMCXSEFHCGJVHFUYDT</p>
+            </div>
+        </div>
+        <small>sekinat</small>
+        <h1>sekinat</h1>
+        <h2>sekinat</h2>
+        <h3>sekinat</h3>
+        <h4>sekinat</h4>
+        <h5>sekinat</h5>
+        <h6>sekinat</h6>
+        <!-- Psuedo Class -->
+        <!-- Hover -->
+        <div id="copy">Copycat Cohort</div>
+        <button class="copy">Copycat Cohort</button>
+        <p class="left">Copycat Cohort</p>
+        <main>
+            <button class="accord">
+                <header>
+                    <p>What is netflix</p>
+                    <div id="add">add</div>
+                    <div id="close">close</div>
+                </header>
+            </button>
+            <div class="showing">
+                <p class="show">Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                    award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+        </main>
+        <main class="holder">
+            <section class="section1">
+                <button class="main">
+                    <p>What is Netflix?</p>
+                    <!-- <i class="fa fa-close" id=""></i> -->
+                    <div id="add">add</div>
+                    <div id="closes">close</div>
+                </button>
+                <div id="main">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+    
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </section>
+            <section class="section1">
+                <button class="main">
+                    <p>What is Netflix?</p>
+                    <!-- <i class="fa fa-close" id=""></i> -->
+                    <div id="add">add</div>
+                    <div id="closes">close</div>
+                </button>
+                <div id="main">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+    
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </section>
+            <section class="section1">
+                <button class="main">
+                    <p>What is Netflix?</p>
+                    <!-- <i class="fa fa-close" id=""></i> -->
+                    <div id="add">add</div>
+                    <div id="closes">close</div>
+                </button>
+                <div id="main">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+    
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </section>
+            <section class="section1">
+                <button class="main">
+                    <p>What is Netflix?</p>
+                    <!-- <i class="fa fa-close" id=""></i> -->
+                    <div id="add">add</div>
+                    <div id="closes">close</div>
+                </button>
+                <div id="main">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+    
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </section>
+            <section class="section1">
+                <button class="main">
+                    <p>What is Netflix?</p>
+                    <!-- <i class="fa fa-close" id=""></i> -->
+                    <div id="add">add</div>
+                    <div id="closes">close</div>
+                </button>
+                <div id="main">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+    
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </section>
+        </main>
+        <div class="copy">
+            <div>Copycat Cohort</div>
+            <div>Copycat Cohort</div>
+            <div>Copycat Cohort</div>
+            <div>Copycat Cohort</div>
+        </div>
+        <div class="lazy">
+            <div class="sub-lazy">lazy Copycat Cohort</div>
+            <div class="sub-lazy">lazy Copycat Cohort</div>
+            <div class="sub-lazy">lazy Copycat Cohort</div>
+            <div class="sub-lazy">lazy Copycat Cohort</div>
+        </div>
+        <div class="ours">
+            <div>ABOUT</div>
+            <div class="our">
+                <div class="who">
+                    <div>Our Wey</div>
+                    <div class="whos">
+                        <div>Show</div>
+                        <div>Show</div>
+                        <div>Show</div>
+                        <div>Show</div>
+                    </div>
+                </div>
+                <div>Our Wey</div>
+                <div>Our Wey</div>
+                <div>Our Wey</div>
+            </div>
+        </div>
+        <div class="over">
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+        <div class="overs">
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+            <div class="smalls"></div>
+        </div>
+        <div class="h1">
+            <h1>Lorem, ipsum dolor.</h1>
+            <h1>Lorem, ipsum dolor.</h1>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+    </div>
+</body>
+
+</html>

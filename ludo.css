@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+}
+#firstpic{
+    width: 130px;
+    height: 142px;
+}
+.first-td{
+    padding: 0;
+}
+.yell{
+    background-color: yellow;
+}
+.gree{
+    background-color: green;
+}

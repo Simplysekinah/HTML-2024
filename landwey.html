@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0 100px;
+            background-color: #f3f3f3;
+        }
+        main{
+            background-color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        .new{
+            text-align: center;
+            margin: 70px;
+        }
+        .gardens{
+            display: flex;
+            padding: 0 100px;
+        }
+        .left{
+            width: 50%;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: #f3f3f3;
+            /* overflow: hidden; */
+        }
+        .house{
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .right{
+            width: 50%;
+            background-color: #f3f3f3;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .aboutDiv{
+            position: relative;
+            padding: 0 15px;
+        }
+        .dropdown{
+            background-color: #f3f3f3;
+            padding: 10px;
+            width: 250px;
+            border-top: 3px solid tomato;
+            position: absolute;
+            display: none;
+            right: 0;
+        }
+        .aboutDiv:hover .dropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="top">
+            <nav>
+                <div>
+                    <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+                </div>
+                <div class="aboutDiv">
+                    <p>About</p>
+                    <div class="dropdown">
+                        <p>Our WEY</p>
+                        <p>Our WEY</p>
+                        <p>Our WEY</p>
+                        <p>Our WEY</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="new">
+                <h1>New homes like no other.</h1>
+                <p>When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for their design excellence, build quality and customer satisfaction.</p>
+            </div>
+        </div>
+        <div class="gardens">
+            <div class="left">
+                <div>
+                    <img class="house" src="https://landwey.ng/wp-content/uploads/2023/01/TErra-gardens.jpg" alt="">
+                    <h1>Terraces at Terra Gardens</h1>
+                    <p>Monastery Road, Sangotedo, Lekki</p>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </main>
+</body>
+</html>

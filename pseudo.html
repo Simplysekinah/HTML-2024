@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* button{
+            width: 550px;
+            margin: auto;
+            display: block;
+        }
+        .what{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .netflix{
+            display: none;
+        }
+        button:hover .netflix{
+            display: block;
+        }
+        .container{
+            display: flex;
+            justify-content: end;
+        } */
+        .trans{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition-property: width, height, border-radius, background-color; 
+            /* transition-property: all; */
+            transition-delay: 2s;
+            transition-duration: 2s;
+            transition-timing-function: linear; 
+            transition: all 2s ease-in;
+            margin: 2px;
+            box-shadow: 5px 5px 20px orangered;
+        }
+        .trans:hover{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+        } 
+        /* .dan{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        .dan:hover{
+            background-color: fuchsia;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        h1:hover{
+            color: blue;
+            background-color: red;
+            text-decoration: overline;
+            cursor: pointer;
+        }
+        h1:focus{
+            background-color: brown;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        button:focus{
+            background-color: green;
+        }
+        button:active{
+            background-color: black;
+        }
+        a:hover{
+            color: darkgoldenrod;
+        }
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color: orange;
+        } */
+        .move{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: all;
+            transition-delay: 2s;
+            transition-duration: 2s;
+            transition-timing-function: linear; 
+            box-shadow: 5px 10px 30px blue;
+            /* transition: all 2s ease-in; */
+        }
+        .move:hover{
+            width: 250px;
+            background-color: purple;
+            border-radius: 100%;
+        }
+        .first:hover{
+            transition-delay: 12s;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            text-decoration: underline;
+        }
+        .first:active{
+            text-decoration: line-through;
+        }
+        .what{
+            display: flex;
+            justify-content: space-between;
+        }
+        .content{
+            display: none;
+        }
+        .holding:focus .content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="trans"></div>
+        <div class="trans"></div>
+        <div class="trans"></div>
+    </div>
+    <!-- <button>
+        <div class="what">
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+        <div class="netflix">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+    </button>
+    <button>
+        <div class="what">
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+        <div class="netflix">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+    </button>
+    <button>
+        <div class="what">
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+        <div class="netflix">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+    </button>
+    <button>
+        <div class="what">
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+        <div class="netflix">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+    </button>
+    <button>
+        <div class="what">
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+        <div class="netflix">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+    </button> -->
+    <!-- <main>
+        <div class="dan"></div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+    </main> -->
+
+    <!-- focus -->
+    <!-- <button>Click me</button>
+    <input type="text">
+    <a href="#">Click me</a>
+    <a href="https://twitter.com">Dan</a>
+    <button>
+        <div>
+            <div>
+                <h1>What is Netflix?</h1>
+            </div>
+            <div>+</div>
+        </div>
+    </button> -->
+    <main>
+        <div class="move"></div>
+        <div>
+            <h1 class="first">Lorem ipsum dolor sit.</h1>
+            <h1 class="first">Lorem ipsum dolor sit.</h1>
+            <h1 class="first">Lorem ipsum dolor sit.</h1>
+        </div>
+        <button class="holding">
+            <div class="what">
+                <p>What is netflix?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                wsdrfgjhkl;,./nmvhdsertyklk.mnc
+            </div>
+        </button>
+    </main>
+</body>
+</html>

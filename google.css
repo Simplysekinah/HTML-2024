@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgffrQ_AKygrScV-mL2myGLE1eD_6tMG3Hw&usqp=CAU); */
+    background-size: cover;
+    background-color: red;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+nav button{
+    background-color: blue;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 100%;
+    border: 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+#gmail:hover {
+    text-decoration: underline;
+}
+nav .google div{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 2px;
+    display: none;
+    /* visibility: hidden; */
+    /* margin: 10px 0 0 0; */
+}
+nav .google{
+    /* width: 100px; */
+    background-color: aqua;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+nav .google:hover div{
+    display: block;
+    /* visibility: visible; */
+}
+.google-image {
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+.search{
+    border: 1px solid lightgrey;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+.search1{
+    display: flex;
+    align-items: center;
+
+}
+.search input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.searched{
+    display: none;
+}
+.search:focus-within .searched{
+    display: block;
+}
+.div-goog{
+    width: 600px;
+    background-color: aquamarine;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.goog img{
+    width: 50px;
+}
+.goog{
+    width: 120px;
+    /* background-color: lightgrey; */
+    text-align: center;
+}
+.goog:hover{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+.more span{
+    float: inline-end;
+    visibility: hidden;
+}
+.goog:hover .more span{
+    transition: all 1s linear 1s;
+    visibility: visible;
+}
