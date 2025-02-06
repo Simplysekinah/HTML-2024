@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            background-color: rgb(184, 152, 152);
+            padding: 0 60px;
+        }
+        .youtube {
+            width: 900px;
+            background-color: aquamarine;
+            height: 500px;
+            padding: 20px 100px;
+            margin: auto;
+        }
+
+        header {
+            background-color: white;
+            height: 750px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 100px;
+            align-items: center;
+            /* position: sticky;
+            position: -webkit-sticky;
+            top: 0; */
+        }
+
+        .dropdown {
+            background-color: lightgrey;
+            width: 200px;
+            padding: 8px 20px;
+            border-radius: 8px;
+            position: absolute;
+            /* left: 0; */
+            right: 0;
+            /* display: none; */
+            visibility: hidden;
+            border-top: 5px solid tomato;
+        }
+
+        .parent {
+            /* background-color: cyan; */
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .parent:hover .dropdown {
+            /* display: block; */
+            visibility: visible;
+        }
+
+        section {
+            padding: 90px 20px;
+            background-color: red;
+        }
+        .wey-parent{
+            position: relative;
+        }
+        .wey-dropdown{
+            position: absolute;
+            background-color: brown;
+            left: -70px;
+            top: -15px;
+            display: none;
+        }
+        .wey-parent:hover .wey-dropdown{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <div>
+                    <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+                </div>
+                <div class="parent">
+                    <p>About</p>
+                    <div class="dropdown">
+                        <div class="wey-parent">
+                            <p>Our Wey</p>
+                            <div class="wey-dropdown">
+                                <p>WeyTV</p>
+                                <p>WeyTV</p>
+                                <p>WeyTV</p>
+                                <p>WeyTV</p>
+                            </div>
+                        </div>
+                        <p>WeyTV</p>
+                        <p>WeyTV</p>
+                        <p>WeyTV</p>
+                        <p>WeyTV</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="youtube"></div>
+        </header>
+        <section>
+            <div class="youtube"></div>
+            <br>
+            <br>
+            <div class="youtube"></div>
+        </section>
+    </main>
+</body>
+
+</html>

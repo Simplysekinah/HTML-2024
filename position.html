@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            position: relative;
+            top: 300px;
+        }
+        .div2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: lightcoral;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            position: absolute;
+            right: 0;
+        }
+        .ancestor{
+            width: 50%;
+            height: 500px;
+            background-color: black;
+            position: relative;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+            align-items: center;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+        .dropdown{
+            background-color: lightgrey;
+            width: 200px;
+            padding: 8px 20px;
+            border-radius: 8px;
+            position: absolute;
+            /* left: 0; */
+            right: 0;
+            /* display: none; */
+            visibility: hidden;
+            border-top: 5px solid tomato;
+        }
+        .parent{
+            /* background-color: cyan; */
+            position: relative;
+            padding: 0 20px;
+        }
+        .parent:hover .dropdown{
+            /* display: block; */
+            visibility: visible;
+        }
+        .sticky{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            /* position: sticky; */
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+        </div>
+        <div class="parent">
+            <p>About</p>
+            <div class="dropdown">
+                <p>Our Wey</p>
+                <p>WeyTV</p>
+                <p>WeyTV</p>
+                <p>WeyTV</p>
+                <p>WeyTV</p>
+            </div>
+        </div>
+    </nav>
+    <div class="sticky"></div>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae iste nisi sequi obcaecati praesentium atque molestias, nemo molestiae corrupti doloremque excepturi saepe fuga qui ipsum commodi dicta laboriosam ab!</h1>
+    <!-- <div class="div1"></div> -->
+    <div class="div2"></div>
+    <div class="ancestor">
+        <div class="div3">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem possimus dignissimos nesciunt dolores dicta molestias, odio quisquam sequi, beatae magnam sapiente? Molestias similique accusamus, ipsam at excepturi illo quaerat ratione.</h1>
+</body>
+</html>
